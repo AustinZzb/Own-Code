@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-9">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="src" path="底层函数重实现"/>
+	<classpathentry kind="src" path="Java开发知识点学习"/>
+	<classpathentry kind="src" path="jfreechart"/>
+	<classpathentry kind="src" path="JAVA8"/>
+	<classpathentry kind="lib" path="jfreechart/gnujaxp.jar"/>
+	<classpathentry kind="lib" path="jfreechart/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="jfreechart/jfreechart-1.0.13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
