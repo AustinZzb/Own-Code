@@ -1,0 +1,987 @@
+// 字符串全排列
+private static List<String> list = new ArrayList<String>();
+private static void fun(char[] c, int k){
+	
+	if(k == c.length-1){
+		list.add(String.valueOf(c));
+		return ;
+	}
+	
+	for(int i = k; i < c.length; i++){
+		char temp = c[k]; c[k] = c[i]; c[i] = temp;
+		fun(c, k+1);
+		temp = c[k]; c[k] = c[i]; c[i] = temp;
+	}
+	
+}
+
+
+// 字符串全排列
+private static List<String> fun(String s){ 
+	
+	List<String> list = new Vector<String>();
+	
+	if(s.length() == 0){
+		list.add("");
+		return list;
+	}
+	
+	for(int i = 0; i < s.length(); i++){
+		char old = s.charAt(i);
+		List<String> list_1 = fun(s.substring(0,i) + s.substring(i+1,s.length()-1));
+		for(int j = 0; j < list_1.size(); j++){
+			list.add(old + list_1.get(j));
+		}
+	}
+	
+	return list;
+	
+}
+
+
+//找到不合法的句子
+public int count(String s) {
+    
+    String[] str = s.split(".");
+    for(int i = 0; i < str.length; i++){
+    	if(!(str[i].charAt(0) >= 'A' && str[i].charAt(0) >= 'Z'))
+    		break;
+    	else if(test(str[i].substring(i))) break;
+    }
+    
+    return i;
+    
+}
+
+private static boolean test(String s){
+	return s.contains("A") || s.contains("B") || s.contains("C") || s.contains("D") || s.contains("E") || s.contains("F") || s.contains("G")
+		   || s.contains("H") || s.contains("I") || s.contains("J") || s.contains("K") || s.contains("L") || s.contains("M") || s.contains("N") || s.contains("O")
+		   || s.contains("P") || s.contains("Q") || s.contains("R") || s.contains("S") || s.contains("T") || s.contains("U")
+		   || s.contains("V") || s.contains("W") || s.contains("X") || s.contains("Y") || s.contains("Z");	
+}
+
+
+// 找到出现最多字母的次数
+public int mostFrequentlyAppearingLetters(String str) {
+    
+	char[] c = str.toCharArray();
+	int[] n = new int[52];
+	for(int i = 0; i < c.length; i++){
+		if(c[i] >= 'a' && c[i] <= 'z')
+			n[c[i] - 'a']++;
+		else
+			n[c[i] - 'A' + 26]++;
+	}
+	
+	int max = 0;
+	for(int i = 0; i < n.length; i++){
+		if(n[i] > max)
+			max = n[i];
+	}
+    
+}
+
+
+//暴力法
+public int maxProfit(int[] prices) {
+	
+	int max = 0;
+	for(int i = prices.length - 1; i >= 0; i--){
+		for(int j = i - 1; j >= 0; j--){
+			if(prices[i] - prices[j] > max)
+				max = prices[i] - prices[j];
+		}
+	}
+	
+	return max;
+	        
+}
+
+// 动态规划
+public int maxProfit(int[] prices) {
+	
+	int max = 0, min = prices[0];
+	for(int i = 1; i < prices.length; i++){
+		max = Math.max(prices[i] - min, max);
+		min = Math.min(prices[i], min);
+	}
+	return max;      
+}
+
+
+// 股票二  深度挖掘题目信息，利用数形结合观察折线图
+public int maxProfit(int[] prices) {
+	
+	int max = 0;
+	for(int i = 1; i < prices.length; i++){
+		if(prices[i] > prices[i-1])
+			max += prices[i] - prices[i-1];
+	}
+	
+	return max;
+	   
+}
+
+// 给定一个数组，找出那个只出现一次的数字
+public int singleNumber(int[] nums) {
+	
+	int once = 0;
+	for(int i = 0; i < nums.length; i++){
+		once ^= nums[i];
+	}
+	
+	return once;
+	 
+}
+
+
+//给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。 下标从1开始
+public int[] twoSum(int[] numbers, int target) {
+	
+	int[] a = new int[2];
+	int i = 0, j = numbers.length - 1;
+	while(i < j){
+	  	int ans = numbers[i] + numbers[j];
+	  	if(numbers[i] + numbers[j] == target){
+			a[0] = i + 1;
+			a[1] = j + 1;
+			break;
+		}else if(ans > target){
+			j--;
+		}else{
+			i++;
+		}
+		
+	}
+	
+	return a;
+	        
+}
+
+
+
+// LeetCode_168. Excel表列名称
+public String convertToTitle(int n) {
+	StringBuilder sb = new StringBuilder();
+	    while (n > 0) {
+		n--;
+		sb.append((char) (n % 26 + 'A'));
+		n =n / 26;
+	}
+	return sb.reverse().toString();
+}
+
+
+
+
+// 哈希表
+public int majorityElement(int[] nums) {
+	
+	int[] ans = new int[Integer.MAX_VALUE];
+	for(int i = 0; i < nums.length; i++){
+		ans[nums[i]]++;
+	}
+	
+	int max = 0;
+	for(int i = 0; i < ans.length; i++){
+		max = max > ans[i] ? max : ans[i];
+	}
+	return max;
+	 
+}
+
+
+//阶乘中的零
+public int trailingZeroes(int n) {
+	int sum = 0;
+	
+	while(n!=0){
+		n /= 5;
+		sum += n;
+	}
+	
+	return sum;
+		
+}
+
+// 旋转数组
+public void rotate(int[] nums, int k) {
+	
+	k %= nums.length;
+	rever(nums, 0, nums.length - k - 1);
+	rever(nums, nums.length - k, nums.length - 1);
+	rever(nums, 0, nums.length - 1);
+	       
+}
+
+private static void rever(int[] nums, int from, int to){
+	while(from < to){
+		int temp = nums[from];
+		nums[from] = nums[to];
+		nums[to] = temp;
+	}
+}
+
+
+
+// 二进制颠倒
+public int reverseBits(int n) {
+   	int i = 0, res = 0;
+    while(i < 32){
+    	int temp = n & 1;
+    	n >>= 1;
+    	res = res<<1 | temp;
+        i++;
+    }
+    return res;
+}
+
+
+// 二进制数中1的个数
+public int hammingWeight(int n) {
+	
+	int sum = 0, i = 0;
+	while(i < 32){
+        int temp = n & 1;
+		if(temp == 1)
+			sum ++;
+		n >>= 1;
+		i++;
+	}
+	
+	return sum;
+	
+}
+
+public int hammingWeight(int n) {
+	
+	int sum = 0;
+	while(n != 0){
+        sum ++;
+        n &= (n-1);
+	}
+	
+	return sum;
+	
+}
+
+
+
+// 快乐数
+public boolean isHappy(int n) {
+	int sum = 0, i = 0;
+	while(i < 10000){
+		char[] c = (n + "").toCharArray();
+		for(int i = 0; i < c.length; i++){
+			sum += Math.pow(Integer.parseInt(c[i] + ""), c.length);
+		}
+		if(sum == n)
+			return true;
+		else{
+			n = sum;
+			sum = 0;
+		}
+		i++;
+	}
+	
+	return false;
+	    
+}
+
+
+// 1-n的素数个数
+public int countPrimes(int n) {
+	
+	List<Integer> list = new ArrayList<Integer>();
+	for(int i = 2; i <= n; i++){
+		list.add(i);	
+	}
+	
+	for(int i = 0; i < list.size; i++){
+		for(int i
+	}
+	
+	return ans;
+	   
+}
+
+
+// 各位相加，给定一个非负整数，反复将各位相加，直到结果为一位数
+public int addDigits(int num) {
+	if(num == 0) return num;
+	return num % 9 == 0 ? 9 : num % 9;	
+}
+
+
+// 矩阵取数
+private int[][] map;
+private int[][] mapcount;
+private int[] newmap;
+private int count = 0;
+private static void get(int x, int y, boolean flag, int cent){
+	
+	if(flag){
+		newmap[count++] = map[x][y];
+		mapcount[x][y] = 1;
+	}
+		
+	while(++x < map.length - cent){
+		if(mapcount[x][y] == 1)
+			return;
+		newmap[count++] = map[x][y];
+		mapcount[x][y] = 1;
+	}
+	x--;
+	
+	while(++y < map[0].length - cent){
+		if(mapcount[x][y] == 1)
+			return;
+		newmap[count++] = map[x][y];	
+		mapcount[x][y] = 1;
+	}
+	y--;
+	
+	while(--x > 0 + cent){
+		if(mapcount[x][y] == 1)
+			return;
+		newmap[count++] = map[x][y];
+		mapcount[x][y] = 1;
+	}
+	x++;
+	
+	while(--y > 0 + cent){
+		if(mapcount[x][y] == 1)
+			return;
+		newmap[count++] = map[x][y];
+		mapcount[x][y] = 1;
+	}
+	y++;
+	
+	get(x, y, false, 1);
+	
+}
+
+// lanqiao_13 世界末的星期天
+int sum = 0;
+for (int i = 2000; ; i+=1000){
+	sum += 24 * 366 + 75 * 365;
+	sum += i % 400 == 0 ? 366 : 365;
+	if (sum % 7 == 2){
+		System.out.print(i+99);
+		break;
+	}
+}
+
+
+// lanqiao_13 马虎算式
+int ans = 0;
+private static void dfs(int[] a, int n){
+		
+	if (n == 5){
+		if (test(a))
+			ans++;
+		return ;
+	}
+		
+	for (int i = 1; i < 10; i++){
+		if (test(a, i)) {
+			a[n] = i;
+			dfs(a, n+1);
+			a[n] = 0;
+		}
+	}
+		
+}
+	
+private static boolean test(int[] a, int n) {
+	// TODO Auto-generated method stub
+	for (int num: a)
+		if (num == n) return false;
+	return true;
+}
+		
+private static boolean test(int[] a) {
+	// TODO Auto-generated method stub
+	int n_1 = a[0]*10 + a[1];
+	int m_1 = a[2]*100 + a[3]*10 + a[4];
+	int n_2 = a[2]*10 + a[4];
+	int m_2 = a[0]*100 + a[3]*10 + a[1];
+	return n_1*m_1==n_2*m_2;
+}
+
+
+// lanqiao_13 振兴中华
+String[][] map = new String[][]{{从我做起振}, {我做起振兴}, {做起振兴中}, {起振兴中华}};
+
+
+private static int bfs(String[][] map){
+	int ans = 0;
+	int[][] next = new int[][]{{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+	Queue<int[]> queue = new LinkedList<int[]>();
+	queue.offer(new int[]{0, 0});
+	
+	while(queue.isEmpty()){
+		int[] n = queue.poll();
+		int x = n[0], y = n[1];
+		for(int i = 0; i < next.length; i++){
+			x += next[0];
+			y += next[1];
+			if(x >= 0 && x < map.lenght && y >= 0 && y < map.length){
+				ans++;
+				queue.offer(new int[]{x, y});
+			}				
+		}
+	}
+	
+	return ans;	
+	
+}	
+
+
+private static double fun(double n){
+	n = 1/n;
+	if(n*Math.pow(10, 99) < 0)
+		return n;
+	fun(n+1);	
+}
+
+
+// lanqiao_13 连号区间数
+private static int fun(int[] n){
+
+	int ans = 0;
+	for (int i = 0; i < n.length; i++){
+		int min = n[i], sum = 0;
+		for (int j = i; j < n.length; j++){
+			min = Math.min(n[j], min);
+			sum += n[j];
+			if ((min * (j-i+1) + (j-i+1)*(j-i)/2) == sum)
+				ans++;
+		}
+	}
+		
+	return ans;
+
+}
+
+
+// lanqiao_14 奇怪的分式
+private static void dfs(int[] now, int[] book, int k){
+	
+	if (k == 4){
+		if (test(int[] now))
+			set.add(String.valueOf(now));
+		return ;
+	}
+	
+	for (int i = 0; i < 9; i++){
+		if (book[i] == 0){
+			now[k] = i+1;
+			book[i] = 1;
+			dfs(now, book, k+1);
+			book[i] = 0;
+		}
+	}
+	
+}
+
+private static boolean test(int[] now){
+	int n = (now[0]*now[3] + now[1]*now[2]) / (now[1]*now[3]);
+	int m = (now[0]*10 + now[2]) / (now[1]*10 + now[3]);
+	return m == n;
+}
+
+
+// lanqiao_14 扑克排序
+private static void fun(char[] map, int k) {
+	if (k == map.length-1) {
+		if (test(String.valueOf(map))) 
+			System.out.println(map);
+	}
+	
+	for (int i = k; i < map.length; i++) {
+		char temp = map[i]; map[i] = map[k]; map[k] = temp;
+		fun(map, k+1);
+		temp = map[i]; map[i] = map[k]; map[k] = temp;
+	}
+}
+
+private static boolean test(String s) {
+	return (s.lastIndexOf('A') - s.indexOf('A') == 2 &&
+		s.lastIndexOf('2') - s.indexOf('2') == 3 &&
+		s.lastIndexOf('3') - s.indexOf('3') == 4 &&
+		s.lastIndexOf('4') - s.indexOf('4') == 5
+		);
+	
+}
+
+
+// lanqiao_2014 分糖果
+private static void fun() {
+	Scanner in = new Scanner(System.in);
+	int m = in.nextInt(), ans = 0;
+	int[] arr = new int[m];
+	for (int i = 0; i < m; i++) {
+		arr[i] = in.nextInt();
+	}
+	
+	while (test(arr)) {
+		int[] temp = new int[m];
+		for (int i = 0; i < m; i++) {
+			int t = (i+1)%m;
+			temp[i] = arr[t]/2+arr[i]/2;
+			ans += temp[i]%2;
+			temp[i] += temp[i]%2;
+		}
+		
+		arr = temp;	
+	}
+	
+	System.out.println(ans);
+}
+
+private static boolean test(int[] arr) {
+	int n = arr[0];
+	
+	for (int temp: arr) {
+		if (temp != n)
+			return false;
+	}
+	
+	return ture;
+}
+
+
+// lanqiao_2014 地宫寻宝(未写完)
+private static void fun() {
+	Scanner in = new Scanner(System.in);
+	int n = in.nextInt(), m = in.nextInt(), k = in.nextInt();
+	int[][] map = new int[n][];
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			map[i][j] = in.nextInt();
+		}
+	}
+	
+	int[] book = new int[k];
+	dfs(map, k, book);
+}
+
+
+/**
+ * LeetCode_稀疏相似度
+ * 核心思想：
+ * 遍历所有数据
+ */
+private static List<String> fun(int[][] docs){
+		
+	List<String> ans = new ArrayList<String>();
+	// help矩阵，记录各条数据的相交情况
+	int[][] help = new int[docs.length][docs.length];
+	// map key(Integer)：记录当前数据    value(List<Integer>): 记录数据所在数组的index
+	HashMap<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
+		
+	for (int i = 0; i < docs.length; i++){
+		for (int j = 0; j < docs[i].length; j++){
+				
+			List<Integer> list = map.get(docs[i][j]);
+				
+			if (list == null){
+				list = new ArrayList<Integer>();
+				map.put(docs[i][j], list);
+			} else {
+				for (int num: list)
+					help[i][num]++;				
+			}
+			
+			list.add(i);
+				
+		}
+			
+		for (int k = 0; k < help.length; k++){
+			if (help[i][k] > 0)
+				ans.add(k+","+i+": "+String.format("%.4f", (double)help[i][k] / (docs[i].length+docs[k].length-help[i][k])));
+		}
+				
+	}
+		
+	return ans;
+		
+}
+
+
+/**
+ * LeetCode_198 打家劫舍（动态规划）--- 经典动态规划
+ * 核心思想：
+ * Math.max(dp[i-1], dp[i-2]+nums[i])
+ */
+private static int fun(int[] nums){
+   
+	if (nums.length == 0)
+		return 0;
+	if (nums.length == 1)
+		return nums[0];
+		
+	int[] dp = new int[nums.length];
+	dp[0] = nums[0];
+	dp[1] = Math.max(dp[0], nums[1]);
+	
+	for (int i = 2; i < nums.length; i++){
+		dp[i] = Math.max(dp[i-1], dp[i-2]+nums[i]);
+	}
+	
+	return dp[dp.length - 1];
+    	
+}
+
+
+// zzulioj_1133	单词个数统计
+private static int fun(String s) {
+	String[] c = s.split("\\s+");
+	if (c[0].equals(""))
+		return c.length-1;
+	return c.length;
+}
+
+
+// zzulioj_1136 将句子中的首字母变成大写
+private static void fun(String s) {
+	char[] c = s.toCharArray();
+	boolean flag = true;
+	for (int i = 0; i < c.length; i++) {
+		if (flag && c[i] >= 'a' && c[i] <= 'z') {
+			c[i] = (char)(c[i] - 32);
+			flag = false;
+		} else if (flag && c[i] >= 'A' && c[i] <= 'Z') {
+			flag = false;
+		} else if (c[i] == ' '){
+			flag = true;
+		}
+	}
+	System.out.println(String.valueOf(c));
+}
+
+
+// zzulioj_1138 C语言合法标识符
+private static boolean fun(String s) {
+	if (s.charAt(0) != '_' && !(s.charAt(0) >= 'A' && s.charAt(0) <= 'Z') && !(s.charAt(0) >= 'a' && s.charAt(0) <= 'z')) 
+		return false;
+	
+	char[] c = s.toCharArray();
+	for (char temp: c) {
+		if (temp != '_' && !(temp >= 'A' && temp <= 'Z') && !(temp >= 'a' && temp <= 'z') && !(temp >= '1' && temp <= '9')) 
+			return false;
+	}
+	
+	return true;
+}
+
+
+// zzulioj_1140 小数点后面第n位
+private static int fun(double a, int n) {
+	String temp = String.valueOf(a);
+	int count = temp.indexOf('.');
+	String s = temp.substring(count+1);
+	if (n > s.length() || n <= 0)
+		return 0;
+	else 
+		return s.charAt(n-1) - '0';
+}
+
+
+// zzulioj_1089 n！最高位
+private static int fun(int n) {
+	BigInteger a = BigInteger.ONE;
+	BigInteger ans = BigInteger.ONE;
+	for (int i = 0; i < n; i++) {
+		ans = ans.mu
+	}
+}
+
+
+// zzulioj_1203 做幻方
+private static void Lobo(int n) {
+	int[][] map = new int[n][n];
+	int x = 0, y = n/2, count = 1, old_x = x, old_y = y;
+	
+	while (count <= n*n) {
+		old_x = x, old_y = y;
+		map[x--][y++] = count++;
+		
+		if (x < 0)
+			x = map.length-1;
+		if (y > map.length-1)
+			y = 0;
+		if (map[x][y] != 0){
+			x = old_x + 1;
+			y = old_y;
+		}
+	}
+	
+	for (int i = 0; i < map.length; i++) {
+		for (int j = 0; j < map.length; j++) {
+			if (j == 0)
+				System.out.print(map[i][j]);
+			else
+				System.out.print(" "+map[i][j]);
+		}
+		System.out.println();
+	}	
+}
+
+
+// PAT 乙级_1001
+private static int fun(int n) {
+	int ans = 0;
+	
+	while (n != 1) {
+		n = n%2 == 0 ? n/2 : (3*n+1)/2;
+		ans++;
+	}
+	
+	return ans;
+}
+
+
+// PAT 乙级_1002
+private static void fun(String s) {
+	int sum = 0;
+	
+	for (char c: s.toCharArray()) {
+		sum += Integer.parseInt(c+"");
+	}
+	System.out.println(sum);
+	
+	boolean flag = true;
+	for (char c: (sum+"").toCharArray()) {
+		String temp = "";
+		switch(c) {
+			case '0': temp = "ling"; break;
+			case '1': temp = "yi"; break;
+			case '2': temp = "er"; break;
+			case '3': temp = "san"; break;
+			case '4': temp = "si"; break;
+			case '5': temp = "wu"; break;
+			case '6': temp = "liu"; break;
+			case '7': temp = "qi"; break;
+			case '8': temp = "ba"; break;
+			default : temp = "jiu";
+		}
+		
+		if (flag) {
+			System.out.print(temp);
+			flag = false;
+		} else {
+			System.out.print(" "+temp);
+		}
+	}
+}
+
+
+// PAT 乙级_1003
+private static void fun(String s) {
+	String[] arr = s.trim().split("P|T");
+	Pattern pattern = Pattern.compile("A*PA+TA*");
+	if (!pattern.matcher(s).matches()) {
+		System.out.println("NO");
+		return ;
+	}
+	pattern = Pattern.compile("A+");
+	
+	if (arr.length == 2 && arr[0].length() == 0) {
+		System.out.println("YES");
+	} else if (arr.length == 3 && arr[0].length()*arr[1].length() == arr[2].length()) {
+		System.out.println("YES");
+	} else {
+		System.out.println("NO");
+	}
+}
+
+
+// PAT 乙级_1004
+private static void fun() {
+	Scanner in = new Scanner(System.in);
+	int n = in.nextInt();
+	in.nextLine();
+	
+	int max = 0, min = 0, count = 0;
+	String[][] name = new String[n][2];
+	int[] grade = new int[n];
+	
+	while (in.hasNextLine()) {
+		String string = in.nextLine();
+		if (string.equals("")) break;
+
+		String[] arr = string.split(" ");
+		name[count][0] = arr[0];
+		name[count][1] = arr[1];
+		
+		int temp = Integer.parseInt(arr[2]);
+		max = temp > grade[max] ? count : max;
+		min = temp < grade[min] ? count : min;
+		grade[count++] = temp;
+	}
+	
+	System.out.println(name[max][0]+" "+name[max][1]);
+	System.out.print(name[min][0]+" "+name[min][1]);
+}
+
+
+// PAT 乙级_1005
+private static void fun(int[] arr) {
+	int[] book = new int[100000];
+	int max = 101, min = 1;
+	
+	for (int num: arr) {
+		min = num < min ? num : min;
+		max = num > max ? num : max;
+		
+		book[num]++;
+		while (num != 1) {
+			num = num%2 == 0 ? num/2 : (3*num+1)/2;
+			book[num]++;
+		}
+	}
+	
+	List<Integer> list = new ArrayList<Integer>();
+	for (int num : arr) {
+		if (book[num] == 1)
+			list.add(num);
+	}
+	
+	
+	java.util.Collections.sort(list);
+	Collections.reverse(list);
+	boolean flag = true;
+	for (Integer integer : list) {
+		if (flag) {
+			System.out.print(integer);
+			flag = false;
+		} else {
+			System.out.print(" "+integer);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
