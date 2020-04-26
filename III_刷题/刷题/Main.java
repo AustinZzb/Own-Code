@@ -1,3 +1,6 @@
+/**
+ * Git测试完美成功
+ */
 import java.util.Scanner;
 
 /**
