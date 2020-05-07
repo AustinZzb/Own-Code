@@ -8,6 +8,6 @@ public class lianxi {
 		String string = "88" + '8';
 		System.out.println(string);
 		
-		
+		//111
 	}
 }
