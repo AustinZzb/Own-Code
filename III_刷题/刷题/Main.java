@@ -1,15 +1,15 @@
 /**
- * Git²âÊÔÍêÃÀ³É¹¦
+ * Gitæµ‹è¯•å®Œç¾æˆåŠŸ
  */
 import org.junit.jupiter.api.Test;
 
 /**
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê3ÔÂ16ÈÕ-ÏÂÎç8:43:34
+ * 2020å¹´3æœˆ16æ—¥-ä¸‹åˆ8:43:34
  */
 public class Main {
-	// ¸üĞÂ
+	// éš¾å—
 	
 	@Test
 	public void Test() {
