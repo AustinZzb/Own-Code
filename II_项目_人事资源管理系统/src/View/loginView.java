@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import Control.Login;
+import Control.LoginControl;
 
 /**
  * 	@author ÕÅÖÂ°î
@@ -101,7 +101,7 @@ public class loginView {
 	 * @method µÇÂ¼
 	 */
 	private void login() {
-		Login login = new Login();
+		LoginControl login = new LoginControl();
 		login.login(textField.getText(), String.valueOf(passwordField.getPassword()));
 	}
 }

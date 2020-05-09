@@ -10,7 +10,7 @@ import Util.DButil;
  *
  * 	2020年5月8日-上午11:18:54
  */
-public class Login {
+public class LoginControl {
 	private DButil dButil;
 	
 	public void login(String id, String upwd) {
