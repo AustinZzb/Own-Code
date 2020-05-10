@@ -1,10 +1,10 @@
 package LeetCode;
 
 /**
- * A ºÏ²¢Á½¸öÓĞĞòÁ´±í
- * 1¡¢µİ¹é²Ù×÷
- * 2¡¢ÀûÓÃĞéÄâÍ·½Úµã
- * 3¡¢³£¹æ²Ù×÷
+ * A åˆå¹¶ä¸¤ä¸ªæœ‰åºé“¾è¡¨
+ * 1ã€é€’å½’æ“ä½œ
+ * 2ã€åˆ©ç”¨è™šæ‹Ÿå¤´èŠ‚ç‚¹
+ * 3ã€å¸¸è§„æ“ä½œ
  * @author 11586
  *
  */
@@ -12,7 +12,7 @@ package LeetCode;
 public class LeetCode_21 {
 	
 	/**
-	 * A µİ¹é²Ù×÷
+	 * A é€’å½’æ“ä½œ
 	 */
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		
@@ -33,14 +33,14 @@ public class LeetCode_21 {
 	
 	
 	/**
-	 * A Ê¹ÓÃĞéÄâÍ·½Úµã
+	 * A ä½¿ç”¨è™šæ‹Ÿå¤´èŠ‚ç‚¹
 	 */
 //	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 //		
 //		if(l1 == null) return l2;
 //		if(l2 == null) return l1;
 //		
-//		ListNode head = new ListNode(0);  // ĞéÄâÍ·½Úµã
+//		ListNode head = new ListNode(0);  // è™šæ‹Ÿå¤´èŠ‚ç‚¹
 //		ListNode cur = head;
 //		while (l1 != null && l2 != null) {
 //			
@@ -68,7 +68,7 @@ public class LeetCode_21 {
 	
 	
 	/**
-	 * A ³£¹æ²Ù×÷
+	 * A å¸¸è§„æ“ä½œ
 	 */
 //	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 //        

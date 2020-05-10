@@ -1,11 +1,11 @@
 package LeetCode;
 
 /**
- * Á´±íµÄÖÐ¼ä½Úµã(¿ìÂýÖ¸Õë)
+ * é“¾è¡¨çš„ä¸­é—´èŠ‚ç‚¹(å¿«æ…¢æŒ‡é’ˆ)
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ1ÈÕ-ÉÏÎç10:22:08
+ * 2020å¹´2æœˆ1æ—¥-ä¸Šåˆ10:22:08
  */
 
 public class LeetCode_876 {

@@ -3,7 +3,7 @@ package LintCode;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _56_两数之和 {
+public class _56_娑撱倖鏆熸稊瀣嫲 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -2,8 +2,8 @@ package LintCode;
 
 import java.util.Scanner;
 
-// A+BÎÊÌâ
-public class _1_A¼ÓBÎÊÌâ {
+// A+Bé—‚î‡€î•½
+public class _1_Aé”ç‡˜é—‚î‡€î•½ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

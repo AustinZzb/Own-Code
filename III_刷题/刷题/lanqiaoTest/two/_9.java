@@ -6,9 +6,9 @@ package lanqiaoTest.two;
 import java.util.Scanner;
 
 /**
- * 	@author ÕÅÖÂ°î
+ * 	@author å¼ è‡´é‚¦
  *
- * 	2020Äê4ÔÂ25ÈÕ-ÏÂÎç5:56:26
+ * 	2020å¹´4æœˆ25æ—¥-ä¸‹åˆ5:56:26
  */
 public class _9 {
 

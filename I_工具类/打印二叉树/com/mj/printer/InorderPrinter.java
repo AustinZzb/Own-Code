@@ -1,7 +1,6 @@
 package com.mj.printer;
 
 /**
-
              ┌──800
          ┌──760
          │   └──600

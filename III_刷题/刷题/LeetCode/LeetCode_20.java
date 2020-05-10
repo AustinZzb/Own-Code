@@ -3,19 +3,19 @@ package LeetCode;
 import java.util.Stack;
 
 /**
- * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
- * 有效字符串需满足：
- * 左括号必须用相同类型的右括号闭合。
- * 左括号必须以正确的顺序闭合。
- * 注意空字符串可被认为是有效字符串。
+ * 缁欏畾涓�涓彧鍖呮嫭 '('锛�')'锛�'{'锛�'}'锛�'['锛�']'聽鐨勫瓧绗︿覆锛屽垽鏂瓧绗︿覆鏄惁鏈夋晥銆�
+ * 鏈夋晥瀛楃涓查渶婊¤冻锛�
+ * 宸︽嫭鍙峰繀椤荤敤鐩稿悓绫诲瀷鐨勫彸鎷彿闂悎銆�
+ * 宸︽嫭鍙峰繀椤讳互姝ｇ‘鐨勯『搴忛棴鍚堛��
+ * 娉ㄦ剰绌哄瓧绗︿覆鍙璁や负鏄湁鏁堝瓧绗︿覆銆�
  * 
- * @author 张致邦
+ * @author 寮犺嚧閭�
  *
- * 2020年2月12日-下午4:01:56
+ * 2020骞�2鏈�12鏃�-涓嬪崍4:01:56
  */
 public class LeetCode_20 {
 	
-	 // 栈的正确使用！！！！
+	 // 鏍堢殑姝ｇ‘浣跨敤锛侊紒锛侊紒
 	 public static boolean isValid(String s) {
 	     
 		 if(s.isEmpty())
@@ -40,7 +40,7 @@ public class LeetCode_20 {
 	 }
 	
 	
-	// 利用栈，效率一般  （错误利用！！！！） 
+	// 鍒╃敤鏍堬紝鏁堢巼涓�鑸�  锛堥敊璇埄鐢紒锛侊紒锛侊級 
 	public static boolean isValid_2(String s) {
         if(s.length() == 0)
             return true;
@@ -77,7 +77,7 @@ public class LeetCode_20 {
 	}
 	
 	
-	// 利用Java自带的一些string函数，运行极慢
+	// 鍒╃敤Java鑷甫鐨勪竴浜泂tring鍑芥暟锛岃繍琛屾瀬鎱�
 	public static boolean isValid_1(String s) {
 		
 		if(s.length() % 2 != 0)

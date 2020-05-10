@@ -1,6 +1,6 @@
 package lanqiao;
 
-// 方格填数
+// 鏂规牸濉暟
 public class lanqiao16_6 {
 	static int[] n = new int[] {0,0,0,0,0,0,0,0,0,0};
 	static int count = 0;

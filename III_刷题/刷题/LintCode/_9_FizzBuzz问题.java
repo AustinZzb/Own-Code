@@ -3,7 +3,7 @@ package LintCode;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _9_FizzBuzzÎÊÌâ {
+public class _9_FizzBuzzé—‚î‡€î•½ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

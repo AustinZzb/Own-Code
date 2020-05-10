@@ -10,7 +10,7 @@ import View.dakaDataView;
  *
  * 	2020年5月8日-下午1:27:57
  */
-public class DakaControl {
+public class dakaControl {
 	
 	public void daka() {
 		new dakaDataView();

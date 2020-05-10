@@ -22,7 +22,7 @@ public class BASIC_30 {
 
 
 /**
-利用Java自带的大数类BigInteger进行解决
+鍒╃敤Java鑷甫鐨勫ぇ鏁扮被BigInteger杩涜瑙ｅ喅
 
 import java.math.BigInteger;
 import java.util.Scanner;

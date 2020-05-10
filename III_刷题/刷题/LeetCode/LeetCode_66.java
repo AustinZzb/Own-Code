@@ -2,15 +2,15 @@ package LeetCode;
 
 import java.util.ArrayList;
 /**
- * ¸ø¶¨Ò»¸öÕıÕûÊıÓÉÊı×é±íÊ¾£¬Êä³ö+1ºóµÄ½á¹û£¬Í¬ÑùÓÃÊı×é±íÊ¾
+ * ç»™å®šä¸€ä¸ªæ­£æ•´æ•°ç”±æ•°ç»„è¡¨ç¤ºï¼Œè¾“å‡º+1åçš„ç»“æœï¼ŒåŒæ ·ç”¨æ•°ç»„è¡¨ç¤º
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ13ÈÕ-ÉÏÎç10:46:52
+ * 2020å¹´2æœˆ13æ—¥-ä¸Šåˆ10:46:52
  */
 public class LeetCode_66 {
 	
-	// ´óÀĞ²Ù×÷
+	// å¤§ä½¬æ“ä½œ
 	public int[] plusOne(int[] digits) {
         for (int i = digits.length - 1; i >= 0; i--) {
 			digits[i] = ++digits[i] % 10;
@@ -22,7 +22,7 @@ public class LeetCode_66 {
     }
 	
 	
-	// Éµ±Æ²Ù×÷
+	// å‚»é€¼æ“ä½œ
 	public int[] plusOne_1(int[] digits) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         int count = 0, m = 0;

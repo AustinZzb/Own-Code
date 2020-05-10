@@ -1,6 +1,6 @@
 package lanqiao;
 
-// ÉúÈÕÀ¯Öò
+// ç”Ÿæ—¥èœ¡çƒ›
 public class lanqiao16_2 {
 
 	public static void main(String[] args) {

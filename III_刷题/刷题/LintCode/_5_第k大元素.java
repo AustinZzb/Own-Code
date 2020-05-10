@@ -3,7 +3,7 @@ package LintCode;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _5_µÚk´óÔªËØ {
+public class _5_ç»—ç¸æ¾¶Ñƒå“ç»±ï¿½ {
 	static int[] n = null;
 
 	public static void main(String[] args) {

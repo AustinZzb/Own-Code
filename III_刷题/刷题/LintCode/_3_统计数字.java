@@ -2,7 +2,7 @@ package LintCode;
 
 import java.util.Scanner;
 
-public class _3_Í³¼ÆÊı×Ö {
+public class _3_ç¼ç†»î…¸éæ¿ç“§ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

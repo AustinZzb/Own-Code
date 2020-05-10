@@ -1,14 +1,14 @@
 package others;
 /**
- * Ò»¸öÊýµÄÈý´Î·½ÊÇËÄÎ»Êý£¬ËÄ´Î·½ÊÇÁùÎ»Êý£¬²¢ÇÒÕâÊÇÊ®¸öÊýÕýºÃÊÇ0-9£¬ÇóÕâ¸öÊý
+ * ä¸€ä¸ªæ•°çš„ä¸‰æ¬¡æ–¹æ˜¯å››ä½æ•°ï¼Œå››æ¬¡æ–¹æ˜¯å…­ä½æ•°ï¼Œå¹¶ä¸”è¿™æ˜¯åä¸ªæ•°æ­£å¥½æ˜¯0-9ï¼Œæ±‚è¿™ä¸ªæ•°
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ1ÈÕ-ÏÂÎç3:27:57
+ * 2020å¹´2æœˆ1æ—¥-ä¸‹åˆ3:27:57
  */
-public class _²ÂÄêÁä {
+public class _çŒœå¹´é¾„ {
 	
-	//¾ºÈü¼ò±ã·½·¨
+	//ç«žèµ›ç®€ä¾¿æ–¹æ³•
 	public static void fun() {
 		
 		for (int i = 11; i < 100; i++) {
@@ -22,7 +22,7 @@ public class _²ÂÄêÁä {
 	}
 	
 	
-	//³£¹æ·½·¨
+	//å¸¸è§„æ–¹æ³•
 //	public static int fun() {
 //		int n = 11;
 //		String[] s_1 = {"0","1","2","3","4","5","6","7","8","9"};

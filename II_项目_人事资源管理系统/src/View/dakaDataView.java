@@ -74,7 +74,7 @@ public class dakaDataView {
 		label_1_1.setBounds(145, 71, 54, 15);
 		frame.getContentPane().add(label_1_1);
 		
-		JLabel label_1_2 = new JLabel("\u5E74\u9F84");
+		JLabel label_1_2 = new JLabel("\u804C\u4F4D");
 		label_1_2.setFont(new Font("¿¬Ìå", Font.BOLD, 16));
 		label_1_2.setBounds(303, 71, 54, 15);
 		frame.getContentPane().add(label_1_2);

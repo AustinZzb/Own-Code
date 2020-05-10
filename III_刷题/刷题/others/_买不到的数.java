@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * ¸ø¶¨Á½¸öÊım£¬n£»ÕÒ³ömºÍnÎŞ·¨×é³ÉµÄ×î´óµÄÊı
+ * ç»™å®šä¸¤ä¸ªæ•°mï¼Œnï¼›æ‰¾å‡ºmå’Œnæ— æ³•ç»„æˆçš„æœ€å¤§çš„æ•°
  * @author 11586
  *
  */
 
-public class _Âò²»µ½µÄÊı {
+public class _ä¹°ä¸åˆ°çš„æ•° {
 	private static final int N = 999 * 99;
 	public static int[] a = new int[N];
 	

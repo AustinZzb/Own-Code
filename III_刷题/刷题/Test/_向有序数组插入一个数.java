@@ -1,6 +1,6 @@
 package Test;
 
-public class _向有序数组插入一个数 {
+public class _鍚戞湁搴忔暟缁勬彃鍏ヤ竴涓暟 {
 	public static int fun(int[] arr, int n) {
 		if(arr.length == 0 || arr[0] >= n) return 0;
 		if(arr[arr.length - 1] < n) return arr.length;

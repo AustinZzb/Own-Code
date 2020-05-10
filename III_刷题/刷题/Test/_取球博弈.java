@@ -3,14 +3,14 @@ package Test;
 import java.util.Scanner;
 
 /**
- * ÏÖÔÚÓĞÒ»¶ÑĞ¡Çò£¬Á½¸öÈËÂÖÁ÷´ÓÇò¶ÑÖĞÈ¡1 || 3 || 7 || 8¸öĞ¡Çò£¬È¡µ½×îºóÒ»¸öĞ¡ÇòµÄÈËÊä
- * ÇóÏÈÈ¡µÄÈËÊÇ·ñ¿ÉÒÔ»ñÊ¤
+ * ç°åœ¨æœ‰ä¸€å †å°çƒï¼Œä¸¤ä¸ªäººè½®æµä»çƒå †ä¸­å–1 || 3 || 7 || 8ä¸ªå°çƒï¼Œå–åˆ°æœ€åä¸€ä¸ªå°çƒçš„äººè¾“
+ * æ±‚å…ˆå–çš„äººæ˜¯å¦å¯ä»¥è·èƒœ
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ8ÈÕ-ÉÏÎç10:28:19
+ * 2020å¹´2æœˆ8æ—¥-ä¸Šåˆ10:28:19
  */
-public class _È¡Çò²©ŞÄ {
+public class _å–çƒåšå¼ˆ {
 	
 	private static void fun(int n) {
 		int[] arr = new int[10000];
@@ -31,14 +31,14 @@ public class _È¡Çò²©ŞÄ {
 			else if(arr[i-8] == 0) arr[i] = 1;
 		}
 		
-		if(arr[n] == 0) System.out.println("ÄãÊäÁË£¡");
+		if(arr[n] == 0) System.out.println("ä½ è¾“äº†ï¼");
 		else System.out.println("YOU ARE WIN !");
 		
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("ÊäÈëÇòµÄ¸öÊı £º ");
+		System.out.println("è¾“å…¥çƒçš„ä¸ªæ•° ï¼š ");
 		Scanner scan = new Scanner(System.in);
 		while (scan.hasNext()) {
 			fun(scan.nextInt());			

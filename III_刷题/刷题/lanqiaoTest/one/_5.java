@@ -2,9 +2,9 @@ package lanqiaoTest.one;
 import java.util.Scanner;
 /**
  * 1.94 2.15488 3.2018 4.544
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê3ÔÂ14ÈÕ-ÏÂÎç4:26:03
+ * 2020å¹´3æœˆ14æ—¥-ä¸‹åˆ4:26:03
  */
 public class _5 {
 	

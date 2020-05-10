@@ -5,15 +5,15 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * ×î½üFJÎªËûµÄÄÌÅ£ÃÇ¿ªÉèÁËÊýÑ§·ÖÎö¿Î£¬FJÖªµÀÈôÒªÑ§ºÃÕâÃÅ¿Î£¬±ØÐëÓÐÒ»¸öºÃµÄÈý½Çº¯Êý»ù±¾¹¦¡£ËùÒÔËû×¼±¸ºÍÄÌÅ£ÃÇ×öÒ»¸ö¡°SineÖ®Îè¡±µÄÓÎÏ·£¬Ô¢½ÌÓÚÀÖ£¬Ìá¸ßÄÌÅ£ÃÇµÄ¼ÆËãÄÜÁ¦¡£
- * ²»·ÁÉè
- * An=sin(1¨Csin(2+sin(3¨Csin(4+...sin(n))...)
+ * æœ€è¿‘FJä¸ºä»–çš„å¥¶ç‰›ä»¬å¼€è®¾äº†æ•°å­¦åˆ†æžè¯¾ï¼ŒFJçŸ¥é“è‹¥è¦å­¦å¥½è¿™é—¨è¯¾ï¼Œå¿…é¡»æœ‰ä¸€ä¸ªå¥½çš„ä¸‰è§’å‡½æ•°åŸºæœ¬åŠŸã€‚æ‰€ä»¥ä»–å‡†å¤‡å’Œå¥¶ç‰›ä»¬åšä¸€ä¸ªâ€œSineä¹‹èˆžâ€çš„æ¸¸æˆï¼Œå¯“æ•™äºŽä¹ï¼Œæé«˜å¥¶ç‰›ä»¬çš„è®¡ç®—èƒ½åŠ›ã€‚
+ * ä¸å¦¨è®¾
+ * An=sin(1â€“sin(2+sin(3â€“sin(4+...sin(n))...)
  * Sn=(...(A1+n)A2+n-1)A3+...+2)An+1
- * FJÏëÈÃÄÌÅ£ÃÇ¼ÆËãSnµÄÖµ£¬ÇëÄã°ïÖúFJ´òÓ¡³öSnµÄÍêÕû±í´ïÊ½£¬ÒÔ·½±ãÄÌÅ£ÃÇ×öÌâ¡£
+ * FJæƒ³è®©å¥¶ç‰›ä»¬è®¡ç®—Snçš„å€¼ï¼Œè¯·ä½ å¸®åŠ©FJæ‰“å°å‡ºSnçš„å®Œæ•´è¡¨è¾¾å¼ï¼Œä»¥æ–¹ä¾¿å¥¶ç‰›ä»¬åšé¢˜ã€‚
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê3ÔÂ2ÈÕ-ÉÏÎç11:21:29
+ * 2020å¹´3æœˆ2æ—¥-ä¸Šåˆ11:21:29
  */
 public class BASIC_21 {
 	private static List<String> list = new ArrayList<String>();

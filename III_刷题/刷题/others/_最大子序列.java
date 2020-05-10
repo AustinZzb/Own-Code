@@ -3,14 +3,14 @@ package others;
 import java.util.Scanner;
 
 /**
- * ×ÓĞòÁĞ£¨²»ÊÇÁ¬ĞøµÄ£©
+ * å­åºåˆ—ï¼ˆä¸æ˜¯è¿ç»­çš„ï¼‰
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ2ÈÕ-ÏÂÎç4:02:58
+ * 2020å¹´2æœˆ2æ—¥-ä¸‹åˆ4:02:58
  */
 
-public class _×î´ó×ÓĞòÁĞ {
+public class _æœ€å¤§å­åºåˆ— {
 	
 	public static int fun(String s, String s1) {
 		

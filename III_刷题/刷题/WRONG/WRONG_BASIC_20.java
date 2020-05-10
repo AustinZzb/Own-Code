@@ -3,20 +3,20 @@ package WRONG;
 import java.util.Scanner;
 
 /**
- * Tom½ÌÊÚÕýÔÚ¸øÑÐ¾¿Éú½²ÊÚÒ»ÃÅ¹ØÓÚ»ùÒòµÄ¿Î³Ì£¬ÓÐÒ»¼þÊÂÇéÈÃËûÆÄÎªÍ·ÌÛ£ºÒ»ÌõÈ¾É«ÌåÉÏÓÐ³ÉÇ§ÉÏÍò¸ö¼î»ù¶Ô£¬ËüÃÇ´Ó0¿ªÊ¼±àºÅ£¬µ½¼¸°ÙÍò£¬¼¸Ç§Íò£¬ÉõÖÁÉÏÒÚ¡£
- * ±ÈÈçËµ£¬ÔÚ¶ÔÑ§Éú½²½âµÚ1234567009ºÅÎ»ÖÃÉÏµÄ¼î»ùÊ±£¬¹â¿´×ÅÊý×ÖÊÇºÜÄÑ×¼È·µÄÄî³öÀ´µÄ¡£
- * ËùÒÔ£¬ËûÆÈÇÐµØÐèÒªÒ»¸öÏµÍ³£¬È»ºóµ±ËûÊäÈë12 3456 7009Ê±£¬»á¸ø³öÏàÓ¦µÄÄî·¨£º
- * Ê®¶þÒÚÈýÇ§ËÄ°ÙÎåÊ®ÁùÍòÆßÇ§Áã¾Å
- * ÓÃººÓïÆ´Òô±íÊ¾Îª
+ * Tomæ•™æŽˆæ­£åœ¨ç»™ç ”ç©¶ç”Ÿè®²æŽˆä¸€é—¨å…³äºŽåŸºå› çš„è¯¾ç¨‹ï¼Œæœ‰ä¸€ä»¶äº‹æƒ…è®©ä»–é¢‡ä¸ºå¤´ç–¼ï¼šä¸€æ¡æŸ“è‰²ä½“ä¸Šæœ‰æˆåƒä¸Šä¸‡ä¸ªç¢±åŸºå¯¹ï¼Œå®ƒä»¬ä»Ž0å¼€å§‹ç¼–å·ï¼Œåˆ°å‡ ç™¾ä¸‡ï¼Œå‡ åƒä¸‡ï¼Œç”šè‡³ä¸Šäº¿ã€‚
+ * æ¯”å¦‚è¯´ï¼Œåœ¨å¯¹å­¦ç”Ÿè®²è§£ç¬¬1234567009å·ä½ç½®ä¸Šçš„ç¢±åŸºæ—¶ï¼Œå…‰çœ‹ç€æ•°å­—æ˜¯å¾ˆéš¾å‡†ç¡®çš„å¿µå‡ºæ¥çš„ã€‚
+ * æ‰€ä»¥ï¼Œä»–è¿«åˆ‡åœ°éœ€è¦ä¸€ä¸ªç³»ç»Ÿï¼Œç„¶åŽå½“ä»–è¾“å…¥12 3456 7009æ—¶ï¼Œä¼šç»™å‡ºç›¸åº”çš„å¿µæ³•ï¼š
+ * åäºŒäº¿ä¸‰åƒå››ç™¾äº”åå…­ä¸‡ä¸ƒåƒé›¶ä¹
+ * ç”¨æ±‰è¯­æ‹¼éŸ³è¡¨ç¤ºä¸º
  * shi er yi san qian si bai wu shi liu wan qi qian ling jiu
- * ÕâÑùËûÖ»ÐèÒªÕÕ×ÅÄî¾Í¿ÉÒÔÁË¡£
- * ÄãµÄÈÎÎñÊÇ°ïËûÉè¼ÆÕâÑùÒ»¸öÏµÍ³£º¸ø¶¨Ò»¸ö°¢À­²®Êý×Ö´®£¬Äã°ïËû°´ÕÕÖÐÎÄ¶ÁÐ´µÄ¹æ·¶×ªÎªººÓïÆ´Òô×Ö´®£¬ÏàÁÚµÄÁ½¸öÒô½ÚÓÃÒ»¸ö¿Õ¸ñ·û¸ñ¿ª¡£
- * ×¢Òâ±ØÐëÑÏ¸ñ°´ÕÕ¹æ·¶£¬±ÈÈçËµ¡°10010¡±¶Á×÷¡°yi wan ling yi shi¡±¶ø²»ÊÇ¡°yi wan ling shi¡±
- * 						¡°100000¡±¶Á×÷¡°shi wan¡±¶ø²»ÊÇ¡°yi shi wan¡±£¬¡°2000¡±¶Á×÷¡°er qian¡±¶ø²»ÊÇ¡°liang qian¡±¡£
+ * è¿™æ ·ä»–åªéœ€è¦ç…§ç€å¿µå°±å¯ä»¥äº†ã€‚
+ * ä½ çš„ä»»åŠ¡æ˜¯å¸®ä»–è®¾è®¡è¿™æ ·ä¸€ä¸ªç³»ç»Ÿï¼šç»™å®šä¸€ä¸ªé˜¿æ‹‰ä¼¯æ•°å­—ä¸²ï¼Œä½ å¸®ä»–æŒ‰ç…§ä¸­æ–‡è¯»å†™çš„è§„èŒƒè½¬ä¸ºæ±‰è¯­æ‹¼éŸ³å­—ä¸²ï¼Œç›¸é‚»çš„ä¸¤ä¸ªéŸ³èŠ‚ç”¨ä¸€ä¸ªç©ºæ ¼ç¬¦æ ¼å¼€ã€‚
+ * æ³¨æ„å¿…é¡»ä¸¥æ ¼æŒ‰ç…§è§„èŒƒï¼Œæ¯”å¦‚è¯´â€œ10010â€è¯»ä½œâ€œyi wan ling yi shiâ€è€Œä¸æ˜¯â€œyi wan ling shiâ€
+ * 						â€œ100000â€è¯»ä½œâ€œshi wanâ€è€Œä¸æ˜¯â€œyi shi wanâ€ï¼Œâ€œ2000â€è¯»ä½œâ€œer qianâ€è€Œä¸æ˜¯â€œliang qianâ€ã€‚
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ5ÈÕ-ÉÏÎç10:04:06
+ * 2020å¹´2æœˆ5æ—¥-ä¸Šåˆ10:04:06
  */
 public class WRONG_BASIC_20 {
 	private static final int A = 100000000;
@@ -82,7 +82,7 @@ public class WRONG_BASIC_20 {
 	
 	public static void main(String[] args) {
 		Scanner sacn = new Scanner(System.in);
-		System.out.println("ÊäÈë0½áÊø");
+		System.out.println("è¾“å…¥0ç»“æŸ");
 		while (true) {
 			int n = sacn.nextInt();
 			if(n == 0)

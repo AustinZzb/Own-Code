@@ -8,18 +8,18 @@ import java.util.Set;
 import java.util.Vector;
 
 /**
- * ¸ø¶¨Ò»¸öÊı×é¶ÔÆä½øĞĞÈ«ÅÅÁĞ
+ * ç»™å®šä¸€ä¸ªæ•°ç»„å¯¹å…¶è¿›è¡Œå…¨æ’åˆ—
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ8ÈÕ-ÏÂÎç4:20:03
+ * 2020å¹´2æœˆ8æ—¥-ä¸‹åˆ4:20:03
  */
-public class _È«ÅÅÁĞ {
+public class _å…¨æ’åˆ— {
 	
 	private static Set<String> list_1 = new HashSet<String>();
 	
-	// ÀûÓÃµİ¹é»ØËİµÄ·½Ê½£¬¾ßÌå²Ù×÷£º¶¨ÒåÒ»¸ö±äÁ¿k±íÊ¾Î»ÖÃÖ¸Õë
-	// ½«kËùÖ¸µÄÔªËØÒÀ´ÎÓëkÖ®ºóµÄÔªËØ½øĞĞ½»»»£¬½»»»µİ¹é¹ıºó¼ÇµÃ»ØËİ
+	// åˆ©ç”¨é€’å½’å›æº¯çš„æ–¹å¼ï¼Œå…·ä½“æ“ä½œï¼šå®šä¹‰ä¸€ä¸ªå˜é‡kè¡¨ç¤ºä½ç½®æŒ‡é’ˆ
+	// å°†kæ‰€æŒ‡çš„å…ƒç´ ä¾æ¬¡ä¸kä¹‹åçš„å…ƒç´ è¿›è¡Œäº¤æ¢ï¼Œäº¤æ¢é€’å½’è¿‡åè®°å¾—å›æº¯
 	private static void fun_1(char[] c, int k) {
 		
 		if(k == c.length - 1) {
@@ -37,8 +37,8 @@ public class _È«ÅÅÁĞ {
 	
 	
 	
-	// ÀûÓÃµİ¹éµÄ·½·¨£¬¾ßÌå²Ù×÷£º¶Ô×Ö·û´®½øĞĞµü´ú£¬Ã¿»ØÈ¡³öÒ»¸öÔªËØ·Åµ½×Ö·û´®µÄÍ·²¿
-	// È»ºó¶ÔÊ£ÏÂµÄ×Ó´®½øĞĞÈ«ÅÅÁĞ
+	// åˆ©ç”¨é€’å½’çš„æ–¹æ³•ï¼Œå…·ä½“æ“ä½œï¼šå¯¹å­—ç¬¦ä¸²è¿›è¡Œè¿­ä»£ï¼Œæ¯å›å–å‡ºä¸€ä¸ªå…ƒç´ æ”¾åˆ°å­—ç¬¦ä¸²çš„å¤´éƒ¨
+	// ç„¶åå¯¹å‰©ä¸‹çš„å­ä¸²è¿›è¡Œå…¨æ’åˆ—
 	private static List<String> fun(String s) {
 		
 		List<String> list = new Vector<String>();
@@ -62,7 +62,7 @@ public class _È«ÅÅÁĞ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("ÊäÈëÒ»´®×Ö·û£¬¶ÔÆä½øĞĞÈ«ÅÅÁĞÊä³ö");
+		System.out.println("è¾“å…¥ä¸€ä¸²å­—ç¬¦ï¼Œå¯¹å…¶è¿›è¡Œå…¨æ’åˆ—è¾“å‡º");
 		Scanner scan = new Scanner(System.in);
 		while (scan.hasNext()) {
 			String string = scan.nextLine();

@@ -2,7 +2,7 @@ package lanqiao;
 
 import java.util.Scanner;
 
-// 坐标系机器人
+// 鍧愭爣绯绘満鍣ㄤ汉
 public class lanqiao10_7 {
 
 	public static void main(String[] args) {

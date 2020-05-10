@@ -1,5 +1,5 @@
 package zzuliOJ;
-//ºÏ·¨µÄIP
+//åˆæ³•çš„IP
 
 import java.util.Arrays;
 import java.util.Scanner;

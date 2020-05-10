@@ -2,7 +2,7 @@ package lanqiao;
 
 import java.util.Scanner;
 
-//十六进制转八进制
+//鍗佸叚杩涘埗杞叓杩涘埗
 public class BASIC_12 {
 
 	public static void main(String[] args) {

@@ -1,62 +1,74 @@
 package Test;
 /**
- * ¸ø¶¨Ò»¸öÊı×é£¬Çó³öÕâ¸öÊı×éÖĞ×î´óµÄ×Ó´®(×¢ÒâÈ«ÊÇ¸ºÊıµÄÇé¿ö)
+ * ç»™å®šä¸€ä¸ªæ•°ç»„ï¼Œæ±‚å‡ºè¿™ä¸ªæ•°ç»„ä¸­æœ€å¤§çš„å­ä¸²(æ³¨æ„å…¨æ˜¯è´Ÿæ•°çš„æƒ…å†µ)
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ7ÈÕ-ÏÂÎç3:43:07
+ * 2020å¹´2æœˆ7æ—¥-ä¸‹åˆ3:43:07
  */
-public class _×î´óÁ¬Ğø×ÓÊı×é {
+public class _æœ€å¤§è¿ç»­å­æ•°ç»„ {
 	
-	//¶ş·Ö·¨
-	private static int fun_1(int[] a, int from, int end) {
+	//äºŒåˆ†æ³•
+	private static int fun_1(int[] nums, int from, int to) {
 		
-		if(from == end) return a[from];      // ×óÓÒÖ¸Õë»áºÏ£¬µİ¹é½áÊø
-		
-		int middle = (from + end) / 2;		 // Çó³öÖĞ¼äµÄÏÂ±ê
-		int m_1 = fun_1(a, from, middle); 	 // ¶Ô×ó±ßµÄÊı×éÇó×î´óÖµ
-		int m_2 = fun_1(a, middle+1, end);   // ¶ÔÓÒ±ßµÄÊı×éÇó×î´óÖµ
-		
-		// ¶ÔÖĞ¼äµÄÊı×éÇó×î´óÖµ
-		int left = a[middle], now = 0;
-		for (int i = middle; i >= from; i--) {
-			now += a[i];
-			left = Math.max(now, left);
-		}
-		
-		int right = a[middle+1], now_1 = 0;
-		for (int i = middle+1; i < end; i++) {
-			now_1 += a[i];
-			right = Math.max(now, right);
-		}
-		
-		return Math.max(left+right, Math.max(m_1, m_2));		
+		if (from == to) return nums[from];
+
+        int middle = (from+to) / 2;
+        int sum_1 = fun_1(nums, from, middle);
+        int sum_2 = fun_1(nums, middle+1, to);
+
+        int left = nums[middle], now = 0;
+        for (int i = middle; i >= 0; i--) {
+            now += nums[i];
+            left = Math.max(left, now);
+        }
+
+        int right = nums[middle+1], now_1 = 0;
+        for (int i = middle+1; i <= to; i++) {
+            now_1 += nums[i];
+            right = Math.max(right, now_1);
+        }
+
+        return Math.max(left+right, Math.max(sum_1, sum_2));
 		
 	}
 	
 	
-	// ¶¯Ì¬¹æ»®·¨
-	private static void fun(int[] a) {
+	// åŠ¨æ€è§„åˆ’æ³•
+	private static void fun(int[] nums) {
 		
-		int sum = 0, max = 0, max_1 = a[0];   // max Îª½á¹û, max_1 Ö÷Òª¿¼ÂÇÊı×éÖĞÈ«Îª¸ºÊıµÄÇé¿öÏÂ£¬ÇóËüµÄ×î´óÖµ
-		boolean flag = true;				  // flag ÅĞ¶ÏÊı×éÊÇ·ñÈ«Îª¸ºÊı
-		for (int i = 0; i < a.length; i++) {
-			if(a[i] > max_1) max_1 = a[i];    // ÇóÊı×éµÄ×î´óÖµ
-			if(sum <= 0) {
-				sum = a[i];
-			}else {
-				flag = false;
-				sum += a[i];
-			}
-			max = sum > max ? sum : max;
-		}
+		int sum = nums[0], ans = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            if (sum <= 0) {
+                sum = nums[i];
+            } else {
+                sum += nums[i];
+            }
+            ans = sum > ans ? sum : ans;
+        }
+
+        System.out.println(ans);
 		
-		if (flag) {
-			System.out.println(max_1);
-			return;
-		}
-		
-		System.out.println(max);
+//		int sum = 0, max = 0, max_1 = a[0];   // max ä¸ºç»“æœ, max_1 ä¸»è¦è€ƒè™‘æ•°ç»„ä¸­å…¨ä¸ºè´Ÿæ•°çš„æƒ…å†µä¸‹ï¼Œæ±‚å®ƒçš„æœ€å¤§å€¼
+//		boolean flag = true;				  // flag åˆ¤æ–­æ•°ç»„æ˜¯å¦å…¨ä¸ºè´Ÿæ•°
+//		for (int i = 0; i < a.length; i++) {
+//			if(a[i] > max_1) max_1 = a[i];    // æ±‚æ•°ç»„çš„æœ€å¤§å€¼
+//			if(sum <= 0) {
+//				sum = a[i];
+//			}else {
+//				flag = false;
+//				sum += a[i];
+//			}
+//			max = sum > max ? sum : max;
+//		}
+//		
+//		if (flag) {
+//			System.out.println(max_1);
+//			return;
+//		}
+//		
+//		System.out.println(max);
 		
 	}
 

@@ -1,18 +1,18 @@
 package LeetCode;
 
 /**
- * 编写一个函数来查找字符串数组中的最长公共前缀。
- * 如果不存在公共前缀，返回空字符串 ""。
- * 示例 1:
- * 输入: ["flower","flow","flight"]
- * 输出: "fl"
+ * 缂栧啓涓�涓嚱鏁版潵鏌ユ壘瀛楃涓叉暟缁勪腑鐨勬渶闀垮叕鍏卞墠缂�銆�
+ * 濡傛灉涓嶅瓨鍦ㄥ叕鍏卞墠缂�锛岃繑鍥炵┖瀛楃涓猜�""銆�
+ * 绀轰緥聽1:
+ * 杈撳叆: ["flower","flow","flight"]
+ * 杈撳嚭: "fl"
  * 
- * @author 张致邦
+ * @author 寮犺嚧閭�
  *
- * 2020年2月12日-上午9:51:31
+ * 2020骞�2鏈�12鏃�-涓婂崍9:51:31
  */
 public class LeetCode_14 {
-	// 官方题解：水平扫描法   LCP
+	// @note 瀹樻柟棰樿В锛氭按骞虫壂鎻忔硶   LCP
 	public String longestCommonPrefix(String[] strs) {
         
 		String string = strs[0];
@@ -29,7 +29,7 @@ public class LeetCode_14 {
     }
 
 	
-	// 普通暴力法
+	// @note 鏅�氭毚鍔涙硶
 	public String longestCommonPrefix_1(String[] strs) {
         
 		String string = "";

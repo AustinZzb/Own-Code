@@ -1,6 +1,6 @@
 package lanqiao;
 
-// ´ÕËãÊ½
+// å‡‘ç®—å¼
 public class lanqiao16_3 {
 	private static int count = 0;
 	private static int[] n = new int[] {0,0,0,0,0,0,0,0,0};

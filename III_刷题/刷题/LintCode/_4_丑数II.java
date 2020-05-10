@@ -1,9 +1,9 @@
 package LintCode;
 
-// 丑数，解题思路：丑数只能由丑数产生
+// 娑撴垶鏆熼敍宀冃掓０妯伙拷婵婄熅閿涙矮绗愰弫鏉垮涧閼崇晫鏁辨稉鎴炴殶娴溠呮晸
 import java.util.Scanner;
 
-public class _4_丑数II {
+public class _4_娑撴垶鏆烮I {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

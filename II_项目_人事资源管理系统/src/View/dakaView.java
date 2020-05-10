@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import Control.DakaControl;
+import Control.dakaControl;
 
 /**
  * 	@author ÕÅÖÂ°î
@@ -93,7 +93,7 @@ public class dakaView {
 	 * @method	´ò¿¨°´Å¥¼àÌýÆ÷
 	 */
 	private void daka() {
-		DakaControl daka = new DakaControl();
+		dakaControl daka = new dakaControl();
 		daka.daka();
 		this.close();
 	}

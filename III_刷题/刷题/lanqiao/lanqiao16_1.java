@@ -2,7 +2,7 @@ package lanqiao;
 
 import java.util.Scanner;
 
-// ÃºÇòÊıÄ¿
+// ç…¤çƒæ•°ç›®
 public class lanqiao16_1 {
 
 	public static void main(String[] args) {

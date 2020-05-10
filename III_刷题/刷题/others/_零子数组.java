@@ -3,19 +3,19 @@ package others;
 import java.util.Scanner;
 
 /**
- * ¸ø¶¨Ò»¸öÊı×é£¬ÇóÕâ¸öÊı×éÖĞºÍ×î½Ó½ü0µÄ×ÓÊı×é(²Î¿¼    _×î´óÁ¬Ğø×ÓÊı×é)
+ * ç»™å®šä¸€ä¸ªæ•°ç»„ï¼Œæ±‚è¿™ä¸ªæ•°ç»„ä¸­å’Œæœ€æ¥è¿‘0çš„å­æ•°ç»„(å‚è€ƒ    _æœ€å¤§è¿ç»­å­æ•°ç»„)
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ2ÈÕ-ÏÂÎç2:59:11
+ * 2020å¹´2æœˆ2æ—¥-ä¸‹åˆ2:59:11
  */
 
-public class _Áã×ÓÊı×é {
+public class _é›¶å­æ•°ç»„ {
 	
 	// 
 	public static int fun(int[] a) {
 		
-		int[] sum = new int[a.length];  // ´æ´¢aµÄÇ°nÏîºÍ
+		int[] sum = new int[a.length];  // å­˜å‚¨açš„å‰né¡¹å’Œ
 		
 		for (int i = 0; i < sum.length; i++) {
 			if(i == 0) 
@@ -26,8 +26,8 @@ public class _Áã×ÓÊı×é {
 		
 		QuickSort_0(0, sum.length-1, sum);
 		
-		int min_1 = Math.abs(sum[0]), min_2 = Math.abs(sum[1] - sum[0]);                  // Ç°nÏîºÍÖĞµÄ×îĞ¡Öµ      ºÍ        i....jºÍµÄ×îĞ¡Öµ
-		for (int i = 1; i < sum.length; i++) {              // Çó³ösumÖĞ¾ø¶ÔÖµ×îĞ¡µÄÔªËØ£¬ºÍsumÖĞÏàÁÚÔªËØ²î¾ø¶ÔÖµ×îĞ¡µÄÖµ
+		int min_1 = Math.abs(sum[0]), min_2 = Math.abs(sum[1] - sum[0]);                  // å‰né¡¹å’Œä¸­çš„æœ€å°å€¼      å’Œ        i....jå’Œçš„æœ€å°å€¼
+		for (int i = 1; i < sum.length; i++) {              // æ±‚å‡ºsumä¸­ç»å¯¹å€¼æœ€å°çš„å…ƒç´ ï¼Œå’Œsumä¸­ç›¸é‚»å…ƒç´ å·®ç»å¯¹å€¼æœ€å°çš„å€¼
 			if(sum[i] < min_1) min_1 = sum[i];
 			if(Math.abs(sum[1] - sum[0]) < min_2) min_2 = Math.abs(sum[1] - sum[0]);
 		}

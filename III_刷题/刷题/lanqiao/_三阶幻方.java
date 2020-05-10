@@ -2,12 +2,12 @@ package lanqiao;
 
 import java.util.Scanner;
 /**
- * ¸ø¶¨Ò»¸ö²ĞÈ±µÄÈı½×»Ã·½£¬Çó³öÍêÕûµÄÈı½×»Ã·½
- * @author ÕÅÖÂ°î
+ * ç¼æ¬ç•¾æ¶“ï¿½æ¶“î…ç•«ç¼‚è™¹æ®‘æ¶“å¤æ¨éªç»˜æŸŸé”›å±¾çœ°é‘å“„ç•¬éå¯¸æ®‘æ¶“å¤æ¨éªç»˜æŸŸ
+ * @author å¯®çŠºåš§é–­ï¿½
  *
- * 2020Äê2ÔÂ2ÈÕ-ÏÂÎç9:05:04
+ * 2020éªï¿½2éˆï¿½2éƒï¿½-æ¶“å¬ªå´9:05:04
  */
-public class _Èı½×»Ã·½ {
+public class _æ¶“å¤æ¨éªç»˜æŸŸ {
 	static int arr[] = new int[9];
     static int ans[] = new int[9];
     static int flag = 0;
@@ -54,7 +54,7 @@ public class _Èı½×»Ã·½ {
 	                if(arr[cur] == 0 && judge(i + 1)){
 	                    arr[cur] = i + 1;
 	                    dfs(cur + 1);
-	                    //»ØËİ   
+	                    //é¥ç‚´å‡½   
 	                    arr[cur] = 0;
 	                }
 	            }

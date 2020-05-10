@@ -1,21 +1,21 @@
 package others;
 /**
- * ÌâÄ¿£º
- * ÓÐ3¶ÑÓ²±Ò£¬·Ö±ðÊÇ3,4,5
- * ¶þÈËÂÖÁ÷È¡Ó²±Ò¡£
- * Ã¿ÈËÃ¿´ÎÖ»ÄÜ´ÓÄ³Ò»¶ÑÉÏÈ¡ÈÎÒâÊýÁ¿¡£
- * ²»ÄÜÆúÈ¨¡£
- * È¡µ½×îºóÒ»Ã¶Ó²±ÒµÄÎªÓ®¼Ò¡£
- * ÇóÏÈÈ¡Ó²±ÒÒ»·½ÓÐÎÞ±ØÊ¤µÄÕÐ·¨¡£
+ * é¢˜ç›®ï¼š
+ * æœ‰3å †ç¡¬å¸ï¼Œåˆ†åˆ«æ˜¯3,4,5
+ * äºŒäººè½®æµå–ç¡¬å¸ã€‚
+ * æ¯äººæ¯æ¬¡åªèƒ½ä»ŽæŸä¸€å †ä¸Šå–ä»»æ„æ•°é‡ã€‚
+ * ä¸èƒ½å¼ƒæƒã€‚
+ * å–åˆ°æœ€åŽä¸€æžšç¡¬å¸çš„ä¸ºèµ¢å®¶ã€‚
+ * æ±‚å…ˆå–ç¡¬å¸ä¸€æ–¹æœ‰æ— å¿…èƒœçš„æ‹›æ³•ã€‚
  * 
- * Ìâ½â£º ÀûÓÃÒì»òÇó½â£¬Èç¹ûÊ£Óà¶ÑÇòµÄÊýÄ¿Òì»ò½á¹û£¨ans£©Îª0£¬ÄÇÃ´±ØÊä
- * 	          Èç¹ûÒì»ò½á¹û£¨ans£©²»Îª0£¬ÄÇÃ´ÓÃansÈ¥ÈÎÒâµÄÒì»òÊ£Óà¶ÑÇòÖÐµÄÒ»¸ö£¬µÃµ½µÄ½á¹ûºÏÀíÔòÄÜÕâÃ´½øÐÐ
+ * é¢˜è§£ï¼š åˆ©ç”¨å¼‚æˆ–æ±‚è§£ï¼Œå¦‚æžœå‰©ä½™å †çƒçš„æ•°ç›®å¼‚æˆ–ç»“æžœï¼ˆansï¼‰ä¸º0ï¼Œé‚£ä¹ˆå¿…è¾“
+ * 	          å¦‚æžœå¼‚æˆ–ç»“æžœï¼ˆansï¼‰ä¸ä¸º0ï¼Œé‚£ä¹ˆç”¨ansåŽ»ä»»æ„çš„å¼‚æˆ–å‰©ä½™å †çƒä¸­çš„ä¸€ä¸ªï¼Œå¾—åˆ°çš„ç»“æžœåˆç†åˆ™èƒ½è¿™ä¹ˆè¿›è¡Œ
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ4ÈÕ-ÏÂÎç8:17:15
+ * 2020å¹´2æœˆ4æ—¥-ä¸‹åˆ8:17:15
  */
-public class _ÄáÄ·¶Ñ {
+public class _å°¼å§†å † {
 	
 	private static void fun(int[] a) {
 		
@@ -23,10 +23,10 @@ public class _ÄáÄ·¶Ñ {
 		for (int i = 0; i < a.length; i++) {
 			ans ^= a[i];
 		}
-		if(ans == 0) System.out.println("±ØÊä");
+		if(ans == 0) System.out.println("å¿…è¾“");
 		for (int i = 0; i < a.length; i++) {
 			int x = ans ^ a[i];
-			if(x < a[i]) System.out.println("Äã¿ÉÒÔÕâÑù¸É £º" + a[i] + "-->" + x);
+			if(x < a[i]) System.out.println("ä½ å¯ä»¥è¿™æ ·å¹² ï¼š" + a[i] + "-->" + x);
 		}
 		
 	}

@@ -1,11 +1,11 @@
 package LeetCode;
 /**
- * ±àĞ´Ò»¸ö³ÌĞò£¬ÕÒ³öµÚ n ¸ö³óÊı
- * ³óÊı¾ÍÊÇÖ»°üº¬ÖÊÒòÊı 2, 3, 5 µÄÕıÕûÊı¡£
+ * ç¼–å†™ä¸€ä¸ªç¨‹åºï¼Œæ‰¾å‡ºç¬¬ n ä¸ªä¸‘æ•°
+ * ä¸‘æ•°å°±æ˜¯åªåŒ…å«è´¨å› æ•° 2, 3, 5 çš„æ­£æ•´æ•°ã€‚
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê1ÔÂ31ÈÕ-ÏÂÎç8:23:32
+ * 2020å¹´1æœˆ31æ—¥-ä¸‹åˆ8:23:32
  */
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class LeetCode_264 {
 	
 	/**
-	 * A ½«ËùÓĞÇé¿öÇó³ö
+	 * A å°†æ‰€æœ‰æƒ…å†µæ±‚å‡º
 	 */
 	public static int nthUglyNumber(int n) {
 		
@@ -48,7 +48,7 @@ public class LeetCode_264 {
 	
 	
 	/**
-	 * A ÆÕÍ¨½â·¨
+	 * A æ™®é€šè§£æ³•
 	 * @param n
 	 * @return
 	 */

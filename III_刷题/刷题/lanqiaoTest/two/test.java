@@ -6,9 +6,9 @@ package lanqiaoTest.two;
 import org.junit.jupiter.api.Test;
 
 /**
- * 	@author ÕÅÖÂ°î
+ * 	@author å¼ è‡´é‚¦
  *
- * 	2020Äê4ÔÂ25ÈÕ-ÏÂÎç5:06:34
+ * 	2020å¹´4æœˆ25æ—¥-ä¸‹åˆ5:06:34
  */
 public class test {
 

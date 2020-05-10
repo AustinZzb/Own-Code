@@ -1,15 +1,15 @@
 /*
- *	ÎÊÌâÃèÊö
-¡¡¡¡¸ø¶¨Ò»¸öµ¥´Ê£¬ÇëÊ¹ÓÃ¿­ÈöÃÜÂë½«Õâ¸öµ¥´Ê¼ÓÃÜ¡£
-¡¡¡¡¿­ÈöÃÜÂëÊÇÒ»ÖÖÌæ»»¼ÓÃÜµÄ¼¼Êõ£¬µ¥´ÊÖÐµÄËùÓÐ×ÖÄ¸¶¼ÔÚ×ÖÄ¸±íÉÏÏòºóÆ«ÒÆ3Î»ºó±»Ìæ»»³ÉÃÜÎÄ¡£¼´a±äÎªd£¬b±äÎªe£¬...£¬w±äÎªz£¬x±äÎªa£¬y±äÎªb£¬z±äÎªc¡£
-¡¡¡¡ÀýÈç£¬lanqiao»á±ä³Éodqtldr¡£
-ÊäÈë¸ñÊ½
-¡¡¡¡ÊäÈëÒ»ÐÐ£¬°üº¬Ò»¸öµ¥´Ê£¬µ¥´ÊÖÐÖ»°üº¬Ð¡Ð´Ó¢ÎÄ×ÖÄ¸¡£
-Êä³ö¸ñÊ½
-¡¡¡¡Êä³öÒ»ÐÐ£¬±íÊ¾¼ÓÃÜºóµÄÃÜÎÄ¡£
-ÑùÀýÊäÈë
+ *	é—®é¢˜æè¿°
+ã€€ã€€ç»™å®šä¸€ä¸ªå•è¯ï¼Œè¯·ä½¿ç”¨å‡¯æ’’å¯†ç å°†è¿™ä¸ªå•è¯åŠ å¯†ã€‚
+ã€€ã€€å‡¯æ’’å¯†ç æ˜¯ä¸€ç§æ›¿æ¢åŠ å¯†çš„æŠ€æœ¯ï¼Œå•è¯ä¸­çš„æ‰€æœ‰å­—æ¯éƒ½åœ¨å­—æ¯è¡¨ä¸Šå‘åŽåç§»3ä½åŽè¢«æ›¿æ¢æˆå¯†æ–‡ã€‚å³aå˜ä¸ºdï¼Œbå˜ä¸ºeï¼Œ...ï¼Œwå˜ä¸ºzï¼Œxå˜ä¸ºaï¼Œyå˜ä¸ºbï¼Œzå˜ä¸ºcã€‚
+ã€€ã€€ä¾‹å¦‚ï¼Œlanqiaoä¼šå˜æˆodqtldrã€‚
+è¾“å…¥æ ¼å¼
+ã€€ã€€è¾“å…¥ä¸€è¡Œï¼ŒåŒ…å«ä¸€ä¸ªå•è¯ï¼Œå•è¯ä¸­åªåŒ…å«å°å†™è‹±æ–‡å­—æ¯ã€‚
+è¾“å‡ºæ ¼å¼
+ã€€ã€€è¾“å‡ºä¸€è¡Œï¼Œè¡¨ç¤ºåŠ å¯†åŽçš„å¯†æ–‡ã€‚
+æ ·ä¾‹è¾“å…¥
 lanqiao
-ÑùÀýÊä³ö
+æ ·ä¾‹è¾“å‡º
 odqtldr
  */
 package lanqiaoTest.two;
@@ -17,9 +17,9 @@ package lanqiaoTest.two;
 import java.util.Scanner;
 
 /**
- * 	@author ÕÅÖÂ°î
+ * 	@author å¼ è‡´é‚¦
  *
- * 	2020Äê4ÔÂ25ÈÕ-ÏÂÎç2:19:05
+ * 	2020å¹´4æœˆ25æ—¥-ä¸‹åˆ2:19:05
  */
 public class _6 {
 

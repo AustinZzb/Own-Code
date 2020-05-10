@@ -1,9 +1,9 @@
 package LeetCode;
 /**
- * É¾³ýÁ´±íÖÐÓë¸ø¶¨ÖµvalÏàµÈµÄËùÓÐ½Úµã
- * @author ÕÅÖÂ°î
+ * åˆ é™¤é“¾è¡¨ä¸­ä¸Žç»™å®šå€¼valç›¸ç­‰çš„æ‰€æœ‰èŠ‚ç‚¹
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ1ÈÕ-ÉÏÎç10:54:01
+ * 2020å¹´2æœˆ1æ—¥-ä¸Šåˆ10:54:01
  */
 public class LeetCode_203 {
 	

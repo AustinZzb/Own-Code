@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 /**
- * ½«ÓÃ»§ÊäÈëµÄÂŞÂíÊı×Ö×ª»¯ÎªÊ®½øÖÆ
- *  I --> 1        ´óÊıÔÚÓÒ±ß±íÊ¾´óÊı-Ğ¡Êı    eg£ºIV = 5£»
+ * å°†ç”¨æˆ·è¾“å…¥çš„ç½—é©¬æ•°å­—è½¬åŒ–ä¸ºåè¿›åˆ¶
+ *  I --> 1        å¤§æ•°åœ¨å³è¾¹è¡¨ç¤ºå¤§æ•°-å°æ•°    egï¼šIV = 5ï¼›
 	V --> 5
 	X --> 10
 	L --> 50
@@ -13,14 +13,14 @@ import java.util.Scanner;
 	D --> 500
 	M --> 1000
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ1ÈÕ-ÏÂÎç2:45:24
+ * 2020å¹´2æœˆ1æ—¥-ä¸‹åˆ2:45:24
  */
 
-public class _ÂŞÂíÊı×Ö {
+public class _ç½—é©¬æ•°å­— {
 	
-	// Ê±¼ä×îÓÅ½â
+	// æ—¶é—´æœ€ä¼˜è§£
 	public static int getvalue(char c) {
 		
 		switch (c) {
@@ -36,7 +36,7 @@ public class _ÂŞÂíÊı×Ö {
 		return 0;
 	}
 	
-	// ÀûÓÃ¹şÏ£±í
+	// åˆ©ç”¨å“ˆå¸Œè¡¨
 	public static int fun_1(String s) {
 		int ans = 0;
 		
@@ -68,7 +68,7 @@ public class _ÂŞÂíÊı×Ö {
 	}
 	
 	
-	// ÆÕÍ¨½â·¨
+	// æ™®é€šè§£æ³•
 	public static int fun(String s) {
 		ArrayList<String> list = new ArrayList<String>();
 		for (int i = 0; i < s.length(); i++) {
@@ -118,7 +118,7 @@ public class _ÂŞÂíÊı×Ö {
 		
 		
 		
-		//Ê±¼ä×îÓÅ½â
+		//æ—¶é—´æœ€ä¼˜è§£
 		String string = scan.next();
 		int up = getvalue(string.charAt(0));
 		int ans = 0;

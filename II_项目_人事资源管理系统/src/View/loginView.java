@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import Control.LoginControl;
+import Entity.Login;
 
 /**
  * 	@author ÕÅÖÂ°î
@@ -21,7 +21,7 @@ import Control.LoginControl;
  */
 public class loginView {
 
-	private JFrame frmDdd;
+	private JFrame frame;
 	private JTextField textField;
 	private JPasswordField passwordField;
 
@@ -36,46 +36,46 @@ public class loginView {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frmDdd = new JFrame();
-		frmDdd.setTitle("\u4EBA\u4E8B\u7BA1\u7406\u7CFB\u7EDF");
-		frmDdd.setIconImage(Toolkit.getDefaultToolkit().getImage("img\\favicon.png"));
-		frmDdd.setBackground(Color.WHITE);
-		frmDdd.getContentPane().setBackground(Color.WHITE);
-		frmDdd.setBounds(100, 100, 399, 236);
-		frmDdd.getContentPane().setLayout(null);
-		frmDdd.setLocationRelativeTo(null);
+		frame = new JFrame();
+		frame.setTitle("\u4EBA\u4E8B\u7BA1\u7406\u7CFB\u7EDF");
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("img\\favicon.png"));
+		frame.setBackground(Color.WHITE);
+		frame.getContentPane().setBackground(Color.WHITE);
+		frame.setBounds(100, 100, 399, 236);
+		frame.getContentPane().setLayout(null);
+		frame.setLocationRelativeTo(null);
 		
 		// @note ÕËºÅ
 		JLabel label = new JLabel("\u8D26\u53F7");
 		label.setBounds(65, 59, 54, 15);
-		frmDdd.getContentPane().add(label);
+		frame.getContentPane().add(label);
 		
 		// @note ÃÜÂë
 		JLabel label_1 = new JLabel("\u5BC6\u7801");
 		label_1.setBounds(65, 102, 54, 15);
-		frmDdd.getContentPane().add(label_1);
+		frame.getContentPane().add(label_1);
 		
 		// @note ÕËºÅ
 		textField = new JTextField();
 		textField.setBounds(145, 56, 144, 21);
-		frmDdd.getContentPane().add(textField);
+		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		// @note ÃÜÂë
 		passwordField = new JPasswordField();
 		passwordField.setBounds(145, 99, 144, 21);
-		frmDdd.getContentPane().add(passwordField);
+		frame.getContentPane().add(passwordField);
 		
 		// @note µÇÂ¼
 		JButton button = new JButton("\u767B\u5F55");
 		button.setBounds(80, 151, 93, 23);
-		frmDdd.getContentPane().add(button);
+		frame.getContentPane().add(button);
 		
 		// @note ·µ»Ø
 		JButton button_1 = new JButton("\u8FD4\u56DE");
 		button_1.setBounds(211, 151, 93, 23);
-		frmDdd.getContentPane().add(button_1);
-		frmDdd.setVisible(true);
+		frame.getContentPane().add(button_1);
+		frame.setVisible(true);
 		
 		// @note Ìí¼Ó¼àÌýÆ÷
 		button.addActionListener(e -> login());
@@ -86,7 +86,7 @@ public class loginView {
 	 * @method ¹Ø±Õµ±Ç°´°¿Ú
 	 */
 	public void close() {
-		this.frmDdd.dispose();
+		this.frame.dispose();
 	}
 	
 	/**
@@ -101,8 +101,14 @@ public class loginView {
 	 * @method µÇÂ¼
 	 */
 	private void login() {
-		LoginControl login = new LoginControl();
-		login.login(textField.getText(), String.valueOf(passwordField.getPassword()));
+		Login login = new Login(textField.getText(), String.valueOf(passwordField.getPassword()));
+		new userView(login);
+//		loginControl loginControl = new loginControl();
+//		boolean flag = loginControl.loginControlFun(login);
+//		
+//		if (flag) {
+//			this.close();
+//		}
 	}
 }
 

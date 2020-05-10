@@ -3,9 +3,9 @@ package others;
 import java.math.BigInteger;
 import java.util.Arrays;
 
-public class _21Î»Ë®ÏÉ»¨Êı {
-	private static BigInteger[] bn = new BigInteger[10];  //¸÷¸öÊıµÄ21´Î·½
-	private static int[] a = new int[10]; //Ã¿¸öÊı×Ö³öÏÖµÄ´ÎÊı
+public class _21ä½æ°´ä»™èŠ±æ•° {
+	private static BigInteger[] bn = new BigInteger[10];  //å„ä¸ªæ•°çš„21æ¬¡æ–¹
+	private static int[] a = new int[10]; //æ¯ä¸ªæ•°å­—å‡ºç°çš„æ¬¡æ•°
 	
 	static void test() {
 		

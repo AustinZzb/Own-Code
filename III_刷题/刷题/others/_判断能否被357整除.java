@@ -2,7 +2,7 @@ package others;
 
 import java.util.Scanner;
 
-public class _ÅĞ¶ÏÄÜ·ñ±»357Õû³ı {
+public class _åˆ¤æ–­èƒ½å¦è¢«357æ•´é™¤ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

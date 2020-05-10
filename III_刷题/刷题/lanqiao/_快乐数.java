@@ -2,14 +2,14 @@ package lanqiao;
 
 import java.util.Scanner;
 /**
- * 2 8 → 2²+8²=68 → 6²+8²=100 → 1²+0²+0²=1
+ * 2 8 鈫� 2虏+8虏=68 鈫� 6虏+8虏=100 鈫� 1虏+0虏+0虏=1
  * 
- * 一个数字的进行如上变换，如果最终能变为1则为快乐数
- * @author 张致邦
+ * 涓�涓暟瀛楃殑杩涜濡備笂鍙樻崲锛屽鏋滄渶缁堣兘鍙樹负1鍒欎负蹇箰鏁�
+ * @author 寮犺嚧閭�
  *
- * 2020年2月2日-下午9:01:08
+ * 2020骞�2鏈�2鏃�-涓嬪崍9:01:08
  */
-public class _快乐数 {
+public class _蹇箰鏁� {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

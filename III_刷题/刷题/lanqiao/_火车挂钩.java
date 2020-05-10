@@ -1,11 +1,11 @@
 package lanqiao;
-//»ğ³µ¹Ò¹³
+//éî‚¥æº…é¸å‚æŒ¬
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _»ğ³µ¹Ò¹³ {
+public class _éî‚¥æº…é¸å‚æŒ¬ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,9 +26,9 @@ public class _»ğ³µ¹Ò¹³ {
 		
 		int n = 0;
 		while(true) {
-			if(n%2 == 0) {  // A ³öÅÆ
+			if(n%2 == 0) {  // A é‘è™¹å¢
 				
-				if(n == 0) { // µÚÒ»´ÎA³öÅÆ  
+				if(n == 0) { // ç»—îƒ¿ç«´å¨†î“‡é‘è™¹å¢  
 					System.out.println(A.get(0));
 					AB.add(A.get(0));
 					A.remove(n);
@@ -39,7 +39,7 @@ public class _»ğ³µ¹Ò¹³ {
 					char c = A.get(0);
 					System.out.println(A.get(0));
 					for(int i=0;i<AB.size();i++) {
-						if(c == AB.get(i)) {  // ¿ÉÒÔÊÕÅÆ
+						if(c == AB.get(i)) {  // é™îˆ™äº’é€å‰å¢
 							
 							A.remove(0);
 							A.add(c);
@@ -65,7 +65,7 @@ public class _»ğ³µ¹Ò¹³ {
 						}
 					}
 					
-					if(i_0 == 0) {  //  ÎŞÏàÍ¬ÅÆ
+					if(i_0 == 0) {  //  éƒçŠµæµ‰éšå²€å¢
 						AB.add(A.get(0));
 						A.remove(0);
 						if(A.size() == 0) {
@@ -78,13 +78,13 @@ public class _»ğ³µ¹Ò¹³ {
 					
 				}
 				
-			}else {  //  B³öÅÆ
+			}else {  //  Bé‘è™¹å¢
 				
 				int i_0 = 0;
 				char c = B.get(0);
 				System.out.println(B.get(0));
 				for(int i=0;i<AB.size();i++) {
-					if(c == AB.get(i)) {  // ¿ÉÒÔÊÕÅÆ
+					if(c == AB.get(i)) {  // é™îˆ™äº’é€å‰å¢
 						
 						B.remove(0);
 						B.add(c);
@@ -109,7 +109,7 @@ public class _»ğ³µ¹Ò¹³ {
 					}
 				}
 				
-				if(i_0 == 0) {  //  ÎŞÏàÍ¬ÅÆ
+				if(i_0 == 0) {  //  éƒçŠµæµ‰éšå²€å¢
 					AB.add(B.get(0));
 					B.remove(0);
 					if(B.size() == 0) {

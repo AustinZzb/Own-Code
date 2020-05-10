@@ -1,5 +1,5 @@
 package zzuliOJ;
-// ´ð°¸´íÎó
+// ç­”æ¡ˆé”™è¯¯
 import java.util.Scanner;
 
 public class zzulioj_1089 {

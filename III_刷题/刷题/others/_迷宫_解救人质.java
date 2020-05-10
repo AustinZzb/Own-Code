@@ -3,28 +3,28 @@ package others;
 import java.util.Scanner;
 
 /**
- * ¸ø¶¨Ò»¸öÃÔ¹¬£¬Çó½â×ß³öÕâ¸öÃÔ¹¬µÄ×î¶ÌÂ·¾¶
- * Input £º 1 ´ú±íÇ½£¬ 8  ´ú±í³ö¿Ú
+ * ç»™å®šä¸€ä¸ªè¿·å®«ï¼Œæ±‚è§£èµ°å‡ºè¿™ä¸ªè¿·å®«çš„æœ€çŸ­è·¯å¾„
+ * Input ï¼š 1 ä»£è¡¨å¢™ï¼Œ 8  ä»£è¡¨å‡ºå£
  * 0010
  * 0000
  * 0010
  * 0180
  * 0001
  * 
- * ÌáÊ¾ £º ÁíÍâ¿ª±ÙÒ»¸öÊı×é£¬ÁĞ¾ÙÏÂÒ»²½¶¼¿ÉÒÔÓĞÄÄĞ©ĞĞÎª
+ * æç¤º ï¼š å¦å¤–å¼€è¾Ÿä¸€ä¸ªæ•°ç»„ï¼Œåˆ—ä¸¾ä¸‹ä¸€æ­¥éƒ½å¯ä»¥æœ‰å“ªäº›è¡Œä¸º
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ9ÈÕ-ÉÏÎç10:38:08
+ * 2020å¹´2æœˆ9æ—¥-ä¸Šåˆ10:38:08
  */
-public class _ÃÔ¹¬_½â¾ÈÈËÖÊ {
+public class _è¿·å®«_è§£æ•‘äººè´¨ {
 	
-	private static int min = Integer.MAX_VALUE; // Â·¾¶×îĞ¡Öµ
-	private static int[][] map;  // ÃÔ¹¬µØÍ¼
-	private static int[][] book; // ¼ÇÂ¼×ã¼£
-	private static int[][] next = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}; // ÏÂÒ»²½µÄ¼¸ÖÖ·½°¸
+	private static int min = Integer.MAX_VALUE; // è·¯å¾„æœ€å°å€¼
+	private static int[][] map;  // è¿·å®«åœ°å›¾
+	private static int[][] book; // è®°å½•è¶³è¿¹
+	private static int[][] next = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}; // ä¸‹ä¸€æ­¥çš„å‡ ç§æ–¹æ¡ˆ
 
-	private static void dfs(int x, int y, int step) {  // x,y Ä¿Ç°ËùÔÚµÄÎ»ÖÃ step, Ä¿Ç°Ëù×ßµÄ²½Êı
+	private static void dfs(int x, int y, int step) {  // x,y ç›®å‰æ‰€åœ¨çš„ä½ç½® step, ç›®å‰æ‰€èµ°çš„æ­¥æ•°
 		
 		if(map[x][y] == 8) {
 			min = min < step ? min : step;
@@ -54,7 +54,7 @@ public class _ÃÔ¹¬_½â¾ÈÈËÖÊ {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Input : ÊäÈëm£¬ n±íÊ¾µØÍ¼µÄ¹æ¸ñ£¬Ö®ºóÊäÈëm*n¸öÊı×Ö£¨1ÎªÇ½£¬0ÎªÂ·£¬8ÎªÈËÖÊ£©±íÊ¾µØÍ¼ £º");
+		System.out.println("Input : è¾“å…¥mï¼Œ nè¡¨ç¤ºåœ°å›¾çš„è§„æ ¼ï¼Œä¹‹åè¾“å…¥m*nä¸ªæ•°å­—ï¼ˆ1ä¸ºå¢™ï¼Œ0ä¸ºè·¯ï¼Œ8ä¸ºäººè´¨ï¼‰è¡¨ç¤ºåœ°å›¾ ï¼š");
 		System.out.println("ANSWER :");
 		Scanner scan = new Scanner(System.in);
 		int m = scan.nextInt();

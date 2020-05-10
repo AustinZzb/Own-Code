@@ -3,21 +3,21 @@ package others;
 import java.util.Scanner;
 
 /**
- * ÏÖÔÚ¸øÄãÒ»¸ö×ÔÈ»Êý nn£¬ËüµÄÎ»ÊýÐ¡ÓÚµÈÓÚÒ»°ÙÍò£¬ÏÖÔÚÄãÒª×öµÄ¾ÍÊÇÇó³öÕâ¸öÊýÕû³ý¾ÅÖ®ºóµÄÓàÊý¡£
- * ÊäÈë¸ñÊ½
- * µÚÒ»ÐÐÓÐÒ»¸öÕûÊý m(1 \le m \le 8)m(1¡Üm¡Ü8)£¬±íÊ¾ÓÐ mm ×é²âÊÔÊý¾Ý¡£
- * Ëæºó mm ÐÐÃ¿ÐÐÓÐÒ»¸ö×ÔÈ»Êý nn¡£
- * Êä³ö¸ñÊ½
- * Êä³ö nn Õû³ý¾ÅÖ®ºóµÄÓàÊý£¬Ã¿´ÎÊä³öÕ¼Ò»ÐÐ¡£
- * Êä³öÊ±Ã¿ÐÐÄ©Î²µÄ¶àÓà¿Õ¸ñ£¬²»Ó°Ïì´ð°¸ÕýÈ·ÐÔ
+ * çŽ°åœ¨ç»™ä½ ä¸€ä¸ªè‡ªç„¶æ•° nnï¼Œå®ƒçš„ä½æ•°å°äºŽç­‰äºŽä¸€ç™¾ä¸‡ï¼ŒçŽ°åœ¨ä½ è¦åšçš„å°±æ˜¯æ±‚å‡ºè¿™ä¸ªæ•°æ•´é™¤ä¹ä¹‹åŽçš„ä½™æ•°ã€‚
+ * è¾“å…¥æ ¼å¼
+ * ç¬¬ä¸€è¡Œæœ‰ä¸€ä¸ªæ•´æ•° m(1 \le m \le 8)m(1â‰¤mâ‰¤8)ï¼Œè¡¨ç¤ºæœ‰ mm ç»„æµ‹è¯•æ•°æ®ã€‚
+ * éšåŽ mm è¡Œæ¯è¡Œæœ‰ä¸€ä¸ªè‡ªç„¶æ•° nnã€‚
+ * è¾“å‡ºæ ¼å¼
+ * è¾“å‡º nn æ•´é™¤ä¹ä¹‹åŽçš„ä½™æ•°ï¼Œæ¯æ¬¡è¾“å‡ºå ä¸€è¡Œã€‚
+ * è¾“å‡ºæ—¶æ¯è¡Œæœ«å°¾çš„å¤šä½™ç©ºæ ¼ï¼Œä¸å½±å“ç­”æ¡ˆæ­£ç¡®æ€§
  * 
- * Ìâ½â£º ½«Ã¿Î»ÊýÏà¼Ó¶Ô9È¡Ä££¬ÔòÎªÔ­Êý¶Ô9È¡Ä£
+ * é¢˜è§£ï¼š å°†æ¯ä½æ•°ç›¸åŠ å¯¹9å–æ¨¡ï¼Œåˆ™ä¸ºåŽŸæ•°å¯¹9å–æ¨¡
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ11ÈÕ-ÏÂÎç3:40:02
+ * 2020å¹´2æœˆ11æ—¥-ä¸‹åˆ3:40:02
  */
-public class _¾ÅÓàÊý {
+public class _ä¹ä½™æ•° {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

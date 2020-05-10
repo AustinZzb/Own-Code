@@ -4,20 +4,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 /**
- * Ò»¸ö³¤¶ÈÎªNµÄÕûÊýÐòÁÐ£¬±àºÅ0 - N - 1¡£½øÐÐQ´Î²éÑ¯£¬²éÑ¯±àºÅiÖÁjµÄËùÓÐÊýÖÐ£¬µÚK´óµÄÊýÊÇ¶àÉÙ¡£
- * ÀýÈç: 1 7 6 3 1¡£i = 1, j = 3£¬k = 2£¬¶ÔÓ¦µÄÊýÎª7 6 3£¬µÚ2´óµÄÊýÎª6¡£
+ * ä¸€ä¸ªé•¿åº¦ä¸ºNçš„æ•´æ•°åºåˆ—ï¼Œç¼–å·0 - N - 1ã€‚è¿›è¡ŒQæ¬¡æŸ¥è¯¢ï¼ŒæŸ¥è¯¢ç¼–å·iè‡³jçš„æ‰€æœ‰æ•°ä¸­ï¼Œç¬¬Kå¤§çš„æ•°æ˜¯å¤šå°‘ã€‚
+ * ä¾‹å¦‚: 1 7 6 3 1ã€‚i = 1, j = 3ï¼Œk = 2ï¼Œå¯¹åº”çš„æ•°ä¸º7 6 3ï¼Œç¬¬2å¤§çš„æ•°ä¸º6ã€‚
  * 
- * µÚ1ÐÐ£º1¸öÊýN£¬±íÊ¾ÐòÁÐµÄ³¤¶È¡£(2 <= N <= 50000) µÚ2 - N + 1ÐÐ£ºÃ¿ÐÐ1¸öÊý£¬¶ÔÓ¦ÐòÁÐÖÐµÄÔªËØ¡£(0 <= Si <= 10^9) 
- * µÚN + 2ÐÐ£º1¸öÊýQ£¬±íÊ¾²éÑ¯µÄÊýÁ¿¡£(2 <= Q <= 50000) 
- * µÚN + 3 - N + Q + 2ÐÐ£ºÃ¿ÐÐ3¸öÊý£¬¶ÔÓ¦²éÑ¯µÄÆðÊ¼±àºÅiºÍ½áÊø±àºÅj£¬ÒÔ¼°k¡£(0 <= i <= j <= N - 1,1 <= k <= j - i + 1)
+ * ç¬¬1è¡Œï¼š1ä¸ªæ•°Nï¼Œè¡¨ç¤ºåºåˆ—çš„é•¿åº¦ã€‚(2 <= N <= 50000) ç¬¬2 - N + 1è¡Œï¼šæ¯è¡Œ1ä¸ªæ•°ï¼Œå¯¹åº”åºåˆ—ä¸­çš„å…ƒç´ ã€‚(0 <= Si <= 10^9) 
+ * ç¬¬N + 2è¡Œï¼š1ä¸ªæ•°Qï¼Œè¡¨ç¤ºæŸ¥è¯¢çš„æ•°é‡ã€‚(2 <= Q <= 50000) 
+ * ç¬¬N + 3 - N + Q + 2è¡Œï¼šæ¯è¡Œ3ä¸ªæ•°ï¼Œå¯¹åº”æŸ¥è¯¢çš„èµ·å§‹ç¼–å·iå’Œç»“æŸç¼–å·jï¼Œä»¥åŠkã€‚(0 <= i <= j <= N - 1,1 <= k <= j - i + 1)
  * 
- * ´íÎóÔ­Òò £º  Î´Öª´íÎó£¡£¡£¡£¡£¡£¡£¡
+ * é”™è¯¯åŽŸå›  ï¼š  æœªçŸ¥é”™è¯¯ï¼ï¼ï¼ï¼ï¼ï¼ï¼
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ3ÈÕ-ÏÂÎç4:59:46
+ * 2020å¹´2æœˆ3æ—¥-ä¸‹åˆ4:59:46
  */
-public class ´íÎó_µÚK´óµÄÊý {
+public class é”™è¯¯_ç¬¬Kå¤§çš„æ•° {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

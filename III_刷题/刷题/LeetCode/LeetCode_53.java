@@ -1,10 +1,10 @@
 package LeetCode;
 /**
- * ×î´óÁ¬Ğø×ÓÊı×éµÄÖµ
+ * æœ€å¤§è¿ç»­å­æ•°ç»„çš„å€¼
  * 
- * @author ÕÅÖÂ°î
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ13ÈÕ-ÉÏÎç10:18:48
+ * 2020å¹´2æœˆ13æ—¥-ä¸Šåˆ10:18:48
  */
 public class LeetCode_53 {
 	
@@ -13,7 +13,7 @@ public class LeetCode_53 {
     }
 	
 	
-	// ¶¯Ì¬¹æ»®
+	// åŠ¨æ€è§„åˆ’
 	private static int fun_2(int[] nums) {
 		int ans = nums[0], sum = nums[0], max = nums[0];
 		
@@ -34,7 +34,7 @@ public class LeetCode_53 {
 	
 	
 	
-	//·ÖÖÎ·¨
+	//åˆ†æ²»æ³•
 	private static int fun_1(int[] nums, int from, int to) {
 		// TODO Auto-generated method stub
 		if(from == to) return nums[from];

@@ -3,7 +3,7 @@ package LintCode;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class _147_ˮ�ɻ��� {
+public class _147_姘翠粰鑺辨暟 {
 	
 	static int n = 0;
 

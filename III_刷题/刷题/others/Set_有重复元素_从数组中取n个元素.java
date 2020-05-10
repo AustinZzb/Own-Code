@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.Vector;
 
-public class Set_ÓĞÖØ¸´ÔªËØ_´ÓÊı×éÖĞÈ¡n¸öÔªËØ {
+public class Set_æœ‰é‡å¤å…ƒç´ _ä»æ•°ç»„ä¸­å–nä¸ªå…ƒç´  {
 	
-	// ÆÕÍ¨µİ¹é·½·¨
+	// æ™®é€šé€’å½’æ–¹æ³•
 	public static void fun_1(int[] x, int[] k, int n, int m){
 		
 		if(n == k.length) {
@@ -31,7 +31,7 @@ public class Set_ÓĞÖØ¸´ÔªËØ_´ÓÊı×éÖĞÈ¡n¸öÔªËØ {
 	}
 	
 	
-	// ÀûÓÃSetÖ±½Ó½øĞĞÈ¥ÖØ
+	// åˆ©ç”¨Setç›´æ¥è¿›è¡Œå»é‡
 	public static Set<String> fun(String s, int n) {
 		
 		Set<String> set = new HashSet<String>();

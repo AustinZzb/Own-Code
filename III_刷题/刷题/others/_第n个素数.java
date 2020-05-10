@@ -2,11 +2,11 @@ package others;
 
 import java.util.Scanner;
 
-public class _µÚn¸öËØÊı {
+public class _ç¬¬nä¸ªç´ æ•° {
 	/**
-	 * ¶¨Àí£º ²»´óÓÚnµÄËØÊıµÄ¸öÊıÎª n/ln£¨n£©
+	 * å®šç†ï¼š ä¸å¤§äºnçš„ç´ æ•°çš„ä¸ªæ•°ä¸º n/lnï¼ˆnï¼‰
 	 * 
-	 * ËØÊı´ò±í£¬ËÙ¶È¿ì
+	 * ç´ æ•°æ‰“è¡¨ï¼Œé€Ÿåº¦å¿«
 	 */
 	private static void fun(int x) {
 		
@@ -35,7 +35,7 @@ public class _µÚn¸öËØÊı {
 	}
 	
 	
-	// ³£¹æ·½·¨£¬ËÙ¶ÈÂı
+	// å¸¸è§„æ–¹æ³•ï¼Œé€Ÿåº¦æ…¢
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);

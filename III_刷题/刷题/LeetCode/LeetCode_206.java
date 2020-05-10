@@ -1,14 +1,14 @@
 package LeetCode;
 /**
- * ·´×ªÁ´±í
- * @author ÕÅÖÂ°î
+ * åè½¬é“¾è¡¨
+ * @author å¼ è‡´é‚¦
  *
- * 2020Äê2ÔÂ1ÈÕ-ÉÏÎç9:10:03
+ * 2020å¹´2æœˆ1æ—¥-ä¸Šåˆ9:10:03
  */
 
 
 public class LeetCode_206 {
-	// µİ¹é
+	// é€’å½’
 	public ListNode reverseList2(ListNode head) {
 	   
 		if(head == null || head.next == null) return head;
@@ -21,7 +21,7 @@ public class LeetCode_206 {
 		
 	}
 	
-	// µü´ú
+	// è¿­ä»£
 	public ListNode reverseList(ListNode head) {
 		ListNode newhead = null;
 		
